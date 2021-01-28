@@ -1,0 +1,612 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+			src="https://kit.fontawesome.com/8adbf22b30.js"
+			crossorigin="anonymous"
+        ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="_responsive.css" />
+        
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container d-flex space-between">
+        <div class="logo">
+          <a href="#">
+            <div class="logo-image">
+              <img src="images/Logo.png" />
+            </div>
+          </a>
+        </div>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Tìm kiếm" name="search" style="margin-left:-50px"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item d-flex">
+            <div class="dropdown">
+              <a href="#" class="item__link">BÉ GÁI</a>
+              <div class="dropdown-content">
+                <div class="dropdown-list">
+                  <h6"><a href="#">Đồ bộ bé gái</a></h6>
+                  <h6><a href="#">Váy đầm bé gái</a></h6>
+                  <h6><a href="#">Đồ bơi bé gái</a></h6>
+                  <h6><a href="#">Áo bé gái</a></h6>
+                  <h6><a href="#">Quần bé gái</a></h6>
+                  <h6><a href="#">Giày bé gái</a></h6>
+                  <h6><a href="#" style="color: red;">Xem tất cả</a></h6>
+                </div>
+                <div class="dropdown-image">
+                  <img src="images/dress_navi.png" />
+                </div>
+              </div>
+            </div>
+              <a href="#" class="fixed-center">
+                  <i class="fas fa-sort-down"></i>
+              </a>
+            </li>
+          <li class="menu__item d-flex">
+            <div class="dropdown">
+              <a href="#" class="item__link">BÉ TRAI</a>
+              <div class="dropdown-content">
+                <div class="dropdown-list">
+                  <h6"><a href="#">Đồ bộ bé trai</a></h6>
+                  <h6><a href="#">Váy đầm bé trai</a></h6>
+                  <h6><a href="#">Đồ bơi bé trai</a></h6>
+                  <h6><a href="#">Áo bé trai</a></h6>
+                  <h6><a href="#">Quần bé trai</a></h6>
+                  <h6><a href="#">Giày bé trai</a></h6>
+                  <h6><a href="#" style="color: red;">Xem tất cả</a></h6>
+                </div>
+                <div class="dropdown-image"style="bottom:180px;"">
+                  <img src="images/navi-boy-removebg-preview.png" />
+                </div>
+              </div>
+            </div>
+            <a href="#" class="fixed-center">
+              <i class="fas fa-sort-down"></i>
+            </a>
+            </li>
+          <li class="menu__item d-flex">
+            <div class="dropdown">
+              <a href="#" class="item__link">PHỤ KIỆN</a>
+              <div class="dropdown-content">
+                <div class="dropdown-list">
+                  <h6"><a href="#">Giày bé gái</a></h6>
+                  <h6><a href="#">Giày bé trai</a></h6>
+                  <h6><a href="#">Nón cho bé</a></h6>
+                  <h6><a href="#">Ba lô-Túi đeo</a></h6>
+                  <h6><a href="#" style="color: red;">Xem tất cả</a></h6>
+                </div>
+                <div class="dropdown-image" style="bottom:140px;">
+                  <img src="images/navi-aces.png" />
+                </div>
+              </div>
+            </div>
+            <a href="#" class="fixed-center">
+                <i class="fas fa-sort-down"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <div class="dropdown">
+              <a href="#" class="item__link">SƠ SINH</a>
+              <div class="dropdown-content">
+                <div class="dropdown-list">
+                  <h6"><a href="#">Body liền quần</a></h6>
+                  <h6><a href="#">Bộ sơ sinh</a></h6>
+                  <h6><a href="#" style="color: red;">Xem tất cả</a></h6>
+                </div>
+                <div class="dropdown-image" style="bottom:165px;">
+                  <img src="images/navi-babi.png" />
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="menu__icon">
+          <i
+            class="fa fa-shopping-cart"
+            style="font-size: 30px; color: #ffffff;margin-top:5px"
+          ></i>
+          <span class="cart-total">
+            0 item(s) - 0 đ
+          </span>
+          <a href="#" class="fixed-center">
+            <i class="fas fa-sort-down"></i>
+        </a>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="row align-center">
+          <div class="phone">
+            <h6>1900636100</h6>
+          </div>
+          <div class="love d-flex">
+            <div class="image">
+                <img
+                src="images/love.png"
+                style="margin: 0px auto 0px auto"
+            /></a>
+            </div>
+            <a href="#" id="wishlist-total" class="wish_details" rel="nofollow" style="color:grey"
+              >Yêu thích (0)</a
+            >
+          </div>
+          <div class="welcome">
+            Xin chào! Bạn có thể
+            <a rel="nofollow" style="color:black" href="https://www.bexinhshop.vn/login"
+              >Đăng Nhập</a
+            >
+            hoặc
+            <a rel="nofollow" style="color:black" href="https://www.bexinhshop.vn/register"
+              >tạo Tài Khoản</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner" style="margin-top: 0px">
+      <a
+        href="https://www.bexinhshop.vn/set-ao-croptop-quan-tole-alibaba-hoa-tiet-de-thuong-cho-be-gai-3-8-tuoi-bgb118181.html"
+        onclick="ga('send', 'event', 'BannerHome1', 'clickBanner', 'set-alibaba');"
+      >
+        <img
+          src="images/banner-style-street.jpg"
+          style="margin: 0px auto 0px auto"
+      /></a>
+
+      <div id="adverts">
+        <div class="row">
+          <div class="adverts-item col-4">
+            <a href="#" rel="nofollow">
+              <span class="text-advert-header">Giao hàng miễn phí</span>
+              <span class="text-advert-subheader">Đơn hàng từ 250K</span>
+            </a>
+          </div>
+          <div class="adverts-item col-4">
+            <a rel="nofollow" href="#">
+              <span class="text-advert-header">Dễ dàng đổi trả hàng</span>
+              <span class="text-advert-subheader">Trong vòng 3 ngày</span>
+            </a>
+          </div>
+          <div class="adverts-item col-4">
+            <a rel="nofollow" href="#">
+              <span class="text-advert-header">Đặt hàng trực tuyến</span>
+              <span class="text-advert-subheader">Hotline : 1900.636.100</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hot-product">
+      <div class="title">
+        <h2 class="title-description">Sản phẩm hot trong tuần</h2>
+      </div>
+      <div class="row mt-50">
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/1.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/2.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/3.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/4.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-50">
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/5.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/6.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/7.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/hot-product/8.jpg" />
+            </div>
+            <div class="description">
+              <h6>
+                Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+              </h6>
+            </div>
+            <div class="price">
+              <h6>95.000 đ</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="product-category">
+        <div class="title">
+          <h2 class="title-description">Danh mục sản phẩm</h2>
+        </div>
+        <div class="category">
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/1.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/2.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/3.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/4.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/5.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/6.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/7.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-image">
+              <img src="images/category/8.jpg" />
+            </div>
+            <div class="description">
+              <h6>Quần áo bé gái</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="children-fashion">
+        <div class="title">
+          <h2 class="title-description">Thời trang trẻ em mới về</h2>
+        </div>
+        <div class="row mt-50">
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/1.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/2.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/3.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/4.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-50">
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/5.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/6.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/7.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <img src="images/children-fashion/8.jpg" />
+                </div>
+                <div class="description">
+                  <h6>
+                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>95.000 đ</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-more-btn">
+              <button style="border: none; outline: none;cursor: pointer;">Xem thêm</button>
+          </div>
+        </div>
+
+      <div class="recent-product">
+          <div class="row">
+            <div class="col-1">
+                <h6>Sản phẩm <br/>vừa xem:</h6>
+            </div>
+            <div class="col-1">
+              <div class="recent-product-image">
+                <img src="images/children-fashion/1.jpg" />
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="recent-product-image">
+                <img src="images/children-fashion/2.jpg" />
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="recent-product-image">
+                <img src="images/children-fashion/3.jpg" />
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="recent-product-image">
+                <img src="images/children-fashion/4.jpg" />
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-3">
+                      <h5><b>Chăm sóc khách hàng</b></h5>
+                      <h6 class="mt-20">Hotline: <a href="#">1900 636100</a></h6>
+                      <h6>Điện thoại: <a href="#">028.7300.6800</a></h6>
+                      <h6>ZALO: <a href="#">093.8100.276</a></h6>
+                      <h6>Làm việc: 8h00 - 17h00 từ Th2 - Th7</h6>
+                      <h6>Địa chỉ: 115/17B Hưng Phú, P.8, Q.8, TP.HCM</h6>
+                  </div>
+                  <div class="col-3 text-center">
+                    <h5><b>Danh mục sản phẩm</b></h5>
+                    <h6 class="mt-20"><a href="#">Quần áo bé trai</a></h6>
+                    <h6><a href="#">Quần áo bé gái</a></h6>
+                    <h6><a href="#">Xem tất cả danh mục</a></h6>
+                </div>
+                <div class="col-3">
+                    <h5><b>Qui định chính sản phẩm</b></h5>
+                    <h6 class="mt-20"><a href="#">Qui định đổi trả hàng</a></h6>
+                    <h6><a href="#">Chính sản phẩm vận chuyển</a></h6>
+                    <h6><a href="#">Về chúng tôi</a></h6>
+                </div>
+                <div class="col-3">
+                  <div class="footer-image">
+                    <img src="images/iFrame.png" />
+                  </div>
+                </div>
+              </div>
+          </div>
+      </footer>
+      <div class="about">
+            <div class="about-title">
+                <h4><b style="color:grey">BÉ XINH SHOP - THỜI TRANG TRẺ EM</b></h4>
+            </div>
+            <div class="description">
+                <h6 style="color:grey">"Bé xinh shop chuyên bán quần áo trẻ em online Đẹp - Rẻ - Uy Tín tại Tphcm, giao hàng tận nơi trên Toàn quốc. Cam kết:<br/>   Hàng chất lượng, mẫu mã đa dạng, đổi trả hàng nếu không vừa ý."</h6>
+            </div>
+            <div class="powered mt-30">
+                <h6>TOP TÌM KIẾM:<a href="#"> Bộ bé gái đẹp </a> | <a href="#">Đồ bé trai sành điệu</a> | <a href="#">Quần áo trẻ em size đại</a> | <a href="#">Đầm trẻ em đẹp</a> | <a href="#">Quần áo bé đi chơi</a> | <a href="#">Thời trang thu đông</a> | <a href="#">Bộ trẻ em mùa hè</a> <br/>
+                    © Bé xinh shop 2020 - Trang mua sắm online Quan ao tre em, Thoi trang tre em, Thoi trang cho be</h6>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
