@@ -15603,6 +15603,11 @@
   "RootNamespace": "KH095",
   "Documents": [
     {
+      "FilePath": "e:\\project\\c#\\KH095\\Views\\Product\\productCategory.cshtml",
+      "TargetPath": "Views\\Product\\productCategory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\project\\c#\\KH095\\Views\\Shared\\_LayoutAdmin.cshtml",
       "TargetPath": "Views\\Shared\\_LayoutAdmin.cshtml",
       "FileKind": "mvc"
@@ -15673,13 +15678,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\project\\c#\\KH095\\Views\\Admin\\Product\\Index.cshtml",
-      "TargetPath": "Views\\Admin\\Product\\Index.cshtml",
+      "FilePath": "e:\\project\\c#\\KH095\\Views\\Product\\productDetail.cshtml",
+      "TargetPath": "Views\\Product\\productDetail.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\project\\c#\\KH095\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "e:\\project\\c#\\KH095\\Views\\Admin\\Product\\Index.cshtml",
+      "TargetPath": "Views\\Admin\\Product\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -209,7 +209,7 @@ namespace KH095.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("ProductTpye")
+                    b.Property<int>("TypeId")
                         .HasColumnType("integer");
 
                     b.Property<int>("Publisher")
@@ -231,7 +231,7 @@ namespace KH095.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductTpye");
+                    b.HasIndex("TypeId");
 
                     b.ToTable("Products");
                 });
@@ -448,7 +448,7 @@ namespace KH095.Migrations
                 {
                     b.HasOne("KH095.Models.ProductType", "ProductTypes")
                         .WithMany("Products")
-                        .HasForeignKey("ProductTpye")
+                        .HasForeignKey("TypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

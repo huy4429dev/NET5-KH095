@@ -22,7 +22,7 @@ namespace KH095.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(int page = 1, int pageSize = 25)
+        public IActionResult Index(int page = 1, int pageSize = 9)
         {
 
             var Products = db.Products

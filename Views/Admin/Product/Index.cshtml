@@ -79,7 +79,7 @@ List<Product> Products = Model;
                                         <ul class="pagination pagination-sm">
                                               	@for (int i = 1; i <= ViewBag.TotalPage; i++)
                                                 {
-                                                    @if(ViewBag.TotalPage == i){
+                                                    @if(ViewBag.CurentPage == i){
                                                         <li class="page-item active"><a  class="page-link" href="?page=@i">@i</a></li>	
                                                     }
                                                     else{
@@ -118,7 +118,7 @@ List<Product> Products = Model;
                     <textarea class="form-control" id="message-text" name="description"></textarea>
                 </div>
                 <div class="form-group">
-                    <select class="form-control" name="ProductTpye">
+                    <select class="form-control" name="TypeId">
                          <option>Loại sản phẩm</option>
                         @foreach (var item in ViewData["ProductTypes"] as IList<ProductType>)
                         {

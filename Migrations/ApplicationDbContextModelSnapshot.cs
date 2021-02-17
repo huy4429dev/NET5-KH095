@@ -197,6 +197,15 @@ namespace KH095.Migrations
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
 
+                    b.Property<string>("Colors")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("text");
+
+                    b.Property<int>("CountOrder")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("timestamp without time zone");
 
@@ -207,8 +216,11 @@ namespace KH095.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("ProductTpye")
-                        .HasColumnType("integer");
+                    b.Property<string>("Images")
+                        .HasColumnType("text");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double precision");
 
                     b.Property<int>("Publisher")
                         .HasColumnType("integer");
@@ -219,17 +231,23 @@ namespace KH095.Migrations
                     b.Property<float>("Rate")
                         .HasColumnType("real");
 
+                    b.Property<string>("Sizes")
+                        .HasColumnType("text");
+
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("character varying(60)");
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.Property<int>("TypeId")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductTpye");
+                    b.HasIndex("TypeId");
 
                     b.ToTable("Products");
                 });
@@ -265,7 +283,15 @@ namespace KH095.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
 
+                    b.Property<int?>("ProductTypeParentId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TypeParentId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductTypeParentId");
 
                     b.ToTable("ProductTypes");
                 });
@@ -446,7 +472,7 @@ namespace KH095.Migrations
                 {
                     b.HasOne("KH095.Models.ProductType", "ProductTypes")
                         .WithMany("Products")
-                        .HasForeignKey("ProductTpye")
+                        .HasForeignKey("TypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -470,6 +496,15 @@ namespace KH095.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("Tag");
+                });
+
+            modelBuilder.Entity("KH095.Models.ProductType", b =>
+                {
+                    b.HasOne("KH095.Models.ProductType", "ProductTypeParent")
+                        .WithMany("ProductTypeChildrens")
+                        .HasForeignKey("ProductTypeParentId");
+
+                    b.Navigation("ProductTypeParent");
                 });
 
             modelBuilder.Entity("KH095.Models.RoleClaim", b =>
@@ -530,6 +565,8 @@ namespace KH095.Migrations
             modelBuilder.Entity("KH095.Models.ProductType", b =>
                 {
                     b.Navigation("Products");
+
+                    b.Navigation("ProductTypeChildrens");
                 });
 
             modelBuilder.Entity("KH095.Models.Role", b =>

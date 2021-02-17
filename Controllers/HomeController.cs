@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using KH095.Models;
+using KH095.Data;
 
 namespace KH095.Controllers
 {
@@ -13,25 +14,19 @@ namespace KH095.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private ApplicationDbContext db;
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
         {
             _logger = logger;
+            this.db = db;
         }
 
         public IActionResult Index()
         {
+            ViewBag.ProductHots = db.Products.OrderBy(item => item.CountOrder).Skip(0).Take(8).ToList();
+            ViewBag.ProductNews = db.Products.OrderBy(item => item.CreatedTime).Skip(0).Take(8).ToList();
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

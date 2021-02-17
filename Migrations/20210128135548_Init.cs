@@ -111,7 +111,7 @@ namespace KH095.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Title = table.Column<string>(type: "character varying(60)", maxLength: 60, nullable: false),
                     Author = table.Column<int>(type: "integer", nullable: false),
-                    ProductTpye = table.Column<int>(type: "integer", nullable: false),
+                    TypeId = table.Column<int>(type: "integer", nullable: false),
                     Publisher = table.Column<int>(type: "integer", nullable: false),
                     Image = table.Column<string>(type: "text", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: true),
@@ -124,8 +124,8 @@ namespace KH095.Migrations
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_ProductTypes_ProductTpye",
-                        column: x => x.ProductTpye,
+                        name: "FK_Products_ProductTypes_TypeId",
+                        column: x => x.TypeId,
                         principalTable: "ProductTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -318,9 +318,9 @@ namespace KH095.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_ProductTpye",
+                name: "IX_Products_TypeId",
                 table: "Products",
-                column: "ProductTpye");
+                column: "TypeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductTags_TagId",
