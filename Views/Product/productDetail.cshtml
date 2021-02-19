@@ -102,6 +102,10 @@
                   <div class="cart">
                     <input type="button" value="MUA NGAY" id="button-cart" 
                     class="addtocart" style="margin: 0px !important;">
+                    <a asp-route="addcart" 
+                      asp-route-productid="@Model.Id"
+                      class="btn btn-secondary btn-sm float-right">Đặt hàng
+                    </a>
                   </div>
                   <div class="love d-flex mt-30">
                     <div class="image">
