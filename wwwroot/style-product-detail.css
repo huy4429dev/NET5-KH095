@@ -545,7 +545,7 @@
     margin-top: 40px;
   }
   
-  .cart input[type="button"].addtocart {
+  .cart input[type="submit"].addtocart {
     background: url(images/cart.png) no-repeat;
     border: 1px #c70410 solid;
     border-radius: 3px;

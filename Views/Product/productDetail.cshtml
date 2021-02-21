@@ -100,8 +100,10 @@
                     </div>
                   </div>
                   <div class="cart">
-                    <input type="button" value="MUA NGAY" id="button-cart" 
-                    class="addtocart" style="margin: 0px !important;">
+                    <form action="/addcart" method="GET">
+                      <input type="text" name="id" hidden value="@Model.Id">
+                     <input type="submit" value="MUA NGAY" id="button-cart"  class="addtocart" style="margin: 0px !important;">
+                    </form>
                   </div>
                   <div class="love d-flex mt-30">
                     <div class="image">

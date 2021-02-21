@@ -5,6 +5,15 @@
 @section Css{
     <link rel="stylesheet" href="/style-product-category.css" />
     <link rel="stylesheet" href="_responsive.css" />
+    <style>
+      .pagination button{
+        cursor: pointer;
+      }
+      .pagination button.active{
+        background-color: #f5447b;
+        color: white;
+      }
+    </style>
 }
 
       <div class="breadcrumbs">
@@ -100,325 +109,37 @@
           <div class="row mt-50">
             @foreach (var item in Model)
             {
-                 <div class="col-3">
+              <div class="col-3">
               <div class="product">
                 <div class="product-image">
-                  <img src="@item.Image" />
+                  <a href="/product/@item.Id">
+                     <img src="@item.Image" />
+                  </a>
                 </div>
                 <div class="description">
                   <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
+                    @item.Title
                   </h6>
                 </div>
                 <div class="price">
-                  <h6>95.000 đ</h6>
+                  <h6>@item.Price.ToString("N3") đ</h6>
                 </div>
               </div>
             </div>
             }
-           
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/2.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/3.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/4.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-50">
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/5.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/6.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/7.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/8.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-50">
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/9.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/10.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/11.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/12.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-50">
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/13.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/14.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/15.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/16.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-50">
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/17.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/18.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/19.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product">
-                <div class="product-image">
-                  <img src="/images/boy-clothes/20.jpg" />
-                </div>
-                <div class="description">
-                  <h6>
-                    Áo thun sược in bàn chân dễ thương cho bé từ 1 - 8 Tuổi AGB16855
-                  </h6>
-                </div>
-                <div class="price">
-                  <h6>95.000 đ</h6>
-                </div>
-              </div>
-            </div>
-  
           <div class="pagination">
             <div class="row">
               <h5 style="margin-top: 10px;font-size: 14px;">TRANG:</h5>
-              <a href="#"><button>1</button></a>
-              <a href="#"><button>2</button></a>
-              <a href="#"><button>3</button></a>
-              <a href="#"><button>4</button></a>
-              <a href="#"><button>5</button></a>
+              @for (int i = 1; i <= ViewBag.TotalPage; i++)
+              {
+                if(ViewBag.CurentPage == i){
+                 <a href="/product/search?query=@ViewBag.Query&page=@i"><button class="active">@i</button></a>
+                }
+                else{
+                 <a href="/product/search?query=@ViewBag.Query&page=@i"><button>@i</button></a>
+                }
+              }
+
             </div>
           </div>
         </div>

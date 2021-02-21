@@ -15668,6 +15668,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\project\\c#\\KH095\\Views\\Cart\\cart.cshtml",
+      "TargetPath": "Views\\Cart\\cart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\project\\c#\\KH095\\Views\\Admin\\Order\\Index.cshtml",
       "TargetPath": "Views\\Admin\\Order\\Index.cshtml",
       "FileKind": "mvc"
@@ -15695,6 +15700,11 @@
     {
       "FilePath": "e:\\project\\c#\\KH095\\Views\\Admin\\Post\\Index.cshtml",
       "TargetPath": "Views\\Admin\\Post\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\project\\c#\\KH095\\Views\\Payment\\payment.cshtml",
+      "TargetPath": "Views\\Payment\\payment.cshtml",
       "FileKind": "mvc"
     },
     {

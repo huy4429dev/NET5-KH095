@@ -44,7 +44,11 @@ namespace KH095.Controllers
                              .Take(pageSize)
                              .Skip(page)
                              .ToList();
-            
+
+            ViewBag.CurentPage = page;
+            var totalProduct = query.Count();
+            ViewBag.TotalPage = totalProduct % pageSize == 0 ? totalProduct / pageSize : totalProduct / pageSize + 1 ;
+            ViewBag.Query = query;
 
             return View("/Views/Product/productCategory.cshtml", Products);
         }

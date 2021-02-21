@@ -51,7 +51,7 @@ namespace KH095.Models
 
         [MaxLength(255, ErrorMessage = "Name is toso long")]
         public string Description { get; set; }
-        public int TypeParentId { get; set; }
+    public int? TypeParentId { get; set; }
         public ProductType ProductTypeParent { get; set; }
         public ICollection<ProductType> ProductTypeChildrens {get;set;}
         public ICollection<Product> Products { get; set; }

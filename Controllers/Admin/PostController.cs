@@ -41,6 +41,27 @@ namespace KH095.Admin.Controllers
             return View("Views/Admin/Post/Index.cshtml", posts);
         }
 
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string query)
+        {
+            query = $"%{query}%";
+            var posts = await _context.Posts
+                                .Where(item => EF.Functions.ILike(item.Title, query))
+                                .Select(item => new PostIndexViewModel
+                                {
+                                    Id = item.Id,
+                                    Title = item.Title,
+                                    Description = item.Description,
+                                    Author = item.User.Username,
+                                    CreatedAt = item.CreatedAt,
+                                    Thumbnail = item.Thumbnail
+
+                                })
+                                .OrderByDescending(item => item.Id)
+                                .ToListAsync();
+            return View("Views/Admin/Post/Index.cshtml", posts);
+        }
+
 
         [HttpGet("create")]
         public IActionResult Create()
@@ -93,7 +114,7 @@ namespace KH095.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                
+
                 model.UserId = 2;
                 model.CreatedAt = DateTime.Now;
                 await _context.Posts.AddAsync(model);
@@ -106,7 +127,7 @@ namespace KH095.Admin.Controllers
 
         }
 
-         [HttpPost("delete/{id}")]
+        [HttpPost("delete/{id}")]
 
         public IActionResult Delete(int id)
         {
@@ -131,14 +152,14 @@ namespace KH095.Admin.Controllers
 
             var post = await _context.Posts.Where(i => i.Id == id).Select(p => new Post
             {
-                Id             = p.Id,
-                Title          = p.Title,
-                Description    = p.Description,
-                Content        = p.Content,
-                Thumbnail      = p.Thumbnail,
-                CreatedAt      = p.CreatedAt,
-                UpdatedAt      = p.UpdatedAt,
-                UserId         = p.UserId
+                Id = p.Id,
+                Title = p.Title,
+                Description = p.Description,
+                Content = p.Content,
+                Thumbnail = p.Thumbnail,
+                CreatedAt = p.CreatedAt,
+                UpdatedAt = p.UpdatedAt,
+                UserId = p.UserId
             }).FirstAsync();
             if (post != null)
             {

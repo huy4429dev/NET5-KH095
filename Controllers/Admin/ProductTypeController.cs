@@ -25,7 +25,15 @@ namespace KH095.Controllers
         public IActionResult Index()
         {
 
-            var Categories = db.ProductTypes.OrderBy(item => item.Id).ToList();
+            var Categories = db.ProductTypes
+                                .Select(item => new ProductType {
+                                    Id = item.Id,
+                                    Description = item.Description,
+                                    Name = item.Name,
+                                    ProductTypeParent = item.ProductTypeParent
+                                })
+                                .OrderBy(item => item.Id)
+                                .ToList();
 
             return View("/Views/Admin/product/ProductType.cshtml", Categories);
         }
@@ -52,11 +60,13 @@ namespace KH095.Controllers
         [HttpPost]
         public IActionResult Create([FromForm] ProductType model)
         {
-
             if (ModelState.IsValid)
             {
                 var found = db.ProductTypes.Any(item => item.Name == model.Name);
-
+                var lastId = db.ProductTypes.Select(item => item.Id)
+                                            .OrderByDescending(item => item)
+                                            .FirstOrDefault();
+                                            
                 // check category found
 
                 if (found)
@@ -65,7 +75,7 @@ namespace KH095.Controllers
                 }
 
                 // add category
-
+                model.Id = lastId + 1;
                 db.ProductTypes.Add(model);
                 db.SaveChanges();
 

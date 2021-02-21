@@ -550,6 +550,7 @@
     position: relative;
     box-sizing: border-box;
     border: 1px solid #dfdfe3;
+    width: 100%;
   }
   
   .hot-product .description {
@@ -573,6 +574,9 @@
     margin: 0px auto 0px auto;
     padding: 6px 8px;
     cursor: pointer;
+    height: 277px;
+    width: 100%;
+    object-fit: cover;
     transition: transform 0.5s ease;
   }
   

@@ -78,7 +78,7 @@
                                                     <td>@item.Phone</td>
                                                     <td>@item.Email</td>
                                                     <td>@item.CreatTime.ToString("dd/MM/yyyy")</td>
-                                                    <td style="width:110px" class="text-center">@(item.Status ? @Html.Raw("<i class='far fa-check-circle' style='color: green'></i>") : @Html.Raw("<i class='far fa-times-circle' style='color: red'></i>"))</td>
+                                                    <td style="width:110px" class="text-center">@(item.Status ? @Html.Raw("<i class='far fa-check-circle' style='color: green'></i>"): @Html.Raw("<i class='far fa-times-circle' style='color: red'></i>"))</td>
                                                     <td class="text-center"><button  style="font-size:10px" class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#editCustomer@(item.Id)"><i class="fas fa-edit"></i></button></td>
                                                     <td class="text-center"><button  style="font-size:10px" class="btn btn-danger btn-sm"  type="button" data-toggle="modal" data-target="#deleteModal@(item.Id)"><i class="fas fa-trash"></i></button></td>
                                                 </tr>
@@ -108,19 +108,19 @@
         <form method="Post" action="/admin/customer">
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tài khoản (*):</label>
+                    <label for="recipient-name" class="col-form-label">Tài khoản:</label>
                     <input type="text" class="form-control" id="recipient-name" name="username">
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Mật khẩu (*):</label>
+                    <label for="recipient-name" class="col-form-label">Mật khẩu:</label>
                     <input type="password" class="form-control" id="recipient-name" name="password">
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Họ (*):</label>
+                    <label for="recipient-name" class="col-form-label">Họ:</label>
                     <input type="text" class="form-control" id="recipient-name" name="FirstName">
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tên (*):</label>
+                    <label for="recipient-name" class="col-form-label">Tên:</label>
                     <input type="text" class="form-control" id="recipient-name" name="LastName">
                 </div>
                 <div class="form-group">
@@ -131,17 +131,6 @@
                     <label for="recipient-name" class="col-form-label">Email:</label>
                     <input type="text" class="form-control" id="recipient-name" name="Email">
                 </div>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Ngày sinh:</label>
-                    <input type="text" class="form-control" id="datepicker" name="BirthDate">
-                </div>
-
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Trạng thái:</label>
-                    <input class="form-control" type="radio" name="status">
-                    <input class="form-control" type="radio" name="status">
-                </div>
-            
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
@@ -169,19 +158,19 @@
             <div class="modal-body">
 
                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tài khoản (*):</label>
+                    <label for="recipient-name" class="col-form-label">Tài khoản:</label>
                     <input type="text" class="form-control" id="recipient-name" name="username" value="@item.Username" disabled >
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Mật khẩu (*):</label>
+                    <label for="recipient-name" class="col-form-label">Mật khẩu:</label>
                     <input type="password" class="form-control" id="recipient-name" name="password"  value="******">
                 </div>
                 @* <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Họ (*):</label>
+                    <label for="recipient-name" class="col-form-label">Họ:</label>
                     <input type="text" class="form-control" id="recipient-name" name="FirstName" value="@item.FirstName">
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tên (*):</label>
+                    <label for="recipient-name" class="col-form-label">Tên:</label>
                     <input type="text" class="form-control" id="recipient-name" name="LastName" value="@item.LastName" >
                 </div> *@
                 <div class="form-group">
