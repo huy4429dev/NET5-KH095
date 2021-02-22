@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "E:\\project\\c#\\KH095\\KH095.csproj": {}
   },
   "projects": {
@@ -12,17 +13,39 @@
         "projectPath": "E:\\project\\c#\\KH095\\KH095.csproj",
         "packagesPath": "C:\\Users\\lexua\\.nuget\\packages\\",
         "outputPath": "E:\\project\\c#\\KH095\\obj\\",
+=======
+    "C:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj",
+        "projectName": "KH095",
+        "projectPath": "C:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj",
+        "packagesPath": "C:\\Users\\Johnathan Tran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\obj\\",
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\lexua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+          "C:\\Users\\Johnathan Tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+<<<<<<< HEAD
+=======
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -100,7 +123,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
         }
       }
     }

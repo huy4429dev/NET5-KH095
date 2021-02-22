@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\project\c#\KH095\bin\Debug\net5.0\appsettings.Development.json
 E:\project\c#\KH095\bin\Debug\net5.0\appsettings.json
 E:\project\c#\KH095\bin\Debug\net5.0\global.json
@@ -25,6 +26,8 @@ E:\project\c#\KH095\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 E:\project\c#\KH095\bin\Debug\net5.0\Npgsql.dll
 E:\project\c#\KH095\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 E:\project\c#\KH095\bin\Debug\net5.0\System.IO.Packaging.dll
+=======
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.csprojAssemblyReference.cache
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.GeneratedMSBuildEditorConfig.editorconfig
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.AssemblyInfoInputs.cache
@@ -48,12 +51,16 @@ E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Order\Index.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Create.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Detail.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Index.cshtml.g.cs
+<<<<<<< HEAD
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\Index.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\ProductType.cshtml.g.cs
+=======
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Profile\Index.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\CustomerReport.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\EmployeeReport.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\OrderReport.cshtml.g.cs
+<<<<<<< HEAD
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Cart\cart.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Payment\payment.cshtml.g.cs
@@ -62,14 +69,211 @@ E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Product\productDetail.cshtml.g.
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+=======
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.RazorTargetAssemblyInfo.cache
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.RazorTargetAssemblyInfo.cs
+<<<<<<< HEAD
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.Views.pdb
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.csproj.CopyComplete
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.dll
 E:\project\c#\KH095\obj\Debug\net5.0\ref\KH095.dll
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.pdb
 E:\project\c#\KH095\obj\Debug\net5.0\KH095.genruntimeconfig.cache
+=======
+E:\project\c#\KH095\obj\Debug\net5.0\KH095.dll
+E:\project\c#\KH095\obj\Debug\net5.0\ref\KH095.dll
+E:\project\c#\KH095\obj\Debug\net5.0\KH095.pdb
+E:\project\c#\KH095\bin\Debug\net5.0\appsettings.Development.json
+E:\project\c#\KH095\bin\Debug\net5.0\appsettings.json
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.exe
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.deps.json
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.runtimeconfig.json
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.runtimeconfig.dev.json
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.dll
+E:\project\c#\KH095\bin\Debug\net5.0\ref\KH095.dll
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.pdb
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.Views.dll
+E:\project\c#\KH095\bin\Debug\net5.0\KH095.Views.pdb
+E:\project\c#\KH095\bin\Debug\net5.0\ClosedXML.dll
+E:\project\c#\KH095\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+E:\project\c#\KH095\bin\Debug\net5.0\ExcelNumberFormat.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Humanizer.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Npgsql.dll
+E:\project\c#\KH095\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\project\c#\KH095\bin\Debug\net5.0\System.IO.Packaging.dll
+E:\project\c#\KH095\obj\Debug\net5.0\KH095.Views.pdb
+E:\project\c#\KH095\obj\Debug\net5.0\KH095.csproj.CopyComplete
+E:\project\c#\KH095\obj\Debug\net5.0\KH095.genruntimeconfig.cache
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\Index.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\ProductType.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Product\productCategory.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Product\productDetail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\appsettings.json
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\global.json
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.exe
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.deps.json
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.runtimeconfig.json
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.runtimeconfig.dev.json
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\ref\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.Views.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\KH095.Views.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\ClosedXML.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\ExcelNumberFormat.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Npgsql.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.csprojAssemblyReference.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.AssemblyInfoInputs.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.AssemblyInfo.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.csproj.CoreCompileInputs.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.RazorAssemblyInfo.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.RazorAssemblyInfo.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\staticwebassets\KH095.StaticWebAssets.Manifest.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\staticwebassets\KH095.StaticWebAssets.xml
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\scopedcss\bundle\KH095.styles.css
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.TagHelpers.input.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.TagHelpers.output.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.RazorCoreGenerate.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Contact\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Customer\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Dashboard\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Login\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Order\Detail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Order\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Create.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Detail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\ProductType.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Profile\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\CustomerReport.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\EmployeeReport.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\OrderReport.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Cart\cart.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Product\productCategory.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Product\productDetail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.RazorTargetAssemblyInfo.cache
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.RazorTargetAssemblyInfo.cs
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.Views.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.csproj.CopyComplete
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\ref\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (5)\NET5-KH095\obj\Debug\net5.0\KH095.genruntimeconfig.cache
+E:\project\c#\KH095\bin\Debug\net5.0\global.json
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Cart\cart.cshtml.g.cs
+E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Payment\payment.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\appsettings.json
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\global.json
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.exe
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.deps.json
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.runtimeconfig.json
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.runtimeconfig.dev.json
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\ref\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.Views.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\KH095.Views.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\ClosedXML.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\ExcelNumberFormat.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Npgsql.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.csprojAssemblyReference.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.AssemblyInfoInputs.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.AssemblyInfo.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.csproj.CoreCompileInputs.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.RazorAssemblyInfo.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.RazorAssemblyInfo.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\staticwebassets\KH095.StaticWebAssets.Manifest.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\staticwebassets\KH095.StaticWebAssets.xml
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\scopedcss\bundle\KH095.styles.css
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.TagHelpers.input.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.TagHelpers.output.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.RazorCoreGenerate.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Contact\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Customer\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Dashboard\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Login\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Order\Detail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Order\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Create.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Detail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Post\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Product\ProductType.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Profile\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\CustomerReport.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\EmployeeReport.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Admin\Report\OrderReport.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Cart\cart.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Payment\payment.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Product\productCategory.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Product\productDetail.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.RazorTargetAssemblyInfo.cache
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.RazorTargetAssemblyInfo.cs
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.Views.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.csproj.CopyComplete
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\ref\KH095.dll
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.pdb
+C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.genruntimeconfig.cache
+>>>>>>> b4b4ca9b66e9151c3d424e6ff2f72f2a8397dc66
