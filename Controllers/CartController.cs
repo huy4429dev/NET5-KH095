@@ -107,24 +107,35 @@ namespace KH095.Controllers
             return RedirectToAction(nameof(Cart));
         }
         /// Cập nhật
-        [Route ("/updatecart", Name = "updatecart")]
+        [Route("/updatecart", Name = "updatecart")]
         [HttpPost]
-        public IActionResult UpdateCart ([FromBody] CartItemUpdate model) {
+        public IActionResult UpdateCart([FromBody] CartItemUpdate model)
+        {
             // Cập nhật Cart thay đổi số lượng quantity ...
-            var cart = GetCartItems ();
-            var cartitem = cart.Find (p => p.product.Id == model.productid);
-            if (cartitem != null) {
+            var cart = GetCartItems();
+            var cartitem = cart.Find(p => p.product.Id == model.productid);
+            if (cartitem != null)
+            {
                 // Đã tồn tại, tăng thêm 1
                 cartitem.quantity = model.quantity;
             }
-            SaveCartSession (cart);
+            SaveCartSession(cart);
             // Trả về mã thành công (không có nội dung gì - chỉ để Ajax gọi)
             return Ok();
         }
-        
-        public class CartItemUpdate {
-            public int productid {get;set;}
-            public int  quantity {get;set;}
+
+        public class CartItemUpdate
+        {
+            public int productid { get; set; }
+            public int quantity { get; set; }
+        }
+
+
+        [Route("/payment")]
+        public IActionResult Payment()
+        {
+            // Xử lý khi đặt hàng
+            return View("/Views/Payment/payment.cshtml");
         }
 
         [Route("/checkout")]

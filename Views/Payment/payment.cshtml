@@ -3,8 +3,17 @@
 }
 @model List<Product>
 @section Css{
-    <link rel="stylesheet" href="/style-product-category.css" />
+    <link rel="stylesheet" href="~/style-payment.css" />
+    <link rel="stylesheet" href="~/styles.css" />
     <link rel="stylesheet" href="_responsive.css" />
+    <style>
+        input[type="text"]{
+            width: 100%;
+        }
+        .payment .payment-detail select{
+            width: 100%;
+        }
+    </style>
 }
 
 <div class="payment">
@@ -157,8 +166,7 @@
                         </div>
                         <div class="mt-20">
                             <h6 class="description">
-                                Giao hàng đến <span class="clr-pink"><b>Hồ Chí Minh</b></span> với phí <span
-                                    class="clr-pink"><b> 17.000 đ</b></span><br />
+                                Giao hàng <span class="clr-pink"><b>Miễn phí</b></span>
                                 <span class="clr-blue">- Thời gian nhận hàng: 1 - 2 ngày.</span>
                             </h6>
                         </div>
@@ -170,14 +178,6 @@
                         <div class="title row">
                             <i class="fas fa-dollar-sign" aria-hidden="true" style="font-size:22px;"></i>
                             <h5 class="ml-20">Thanh toán</h5>
-                        </div>
-                        <div class="method-option row">
-                            <input type="radio" id="payment-method-1" name="payment-method" value="payment-method-1"
-                                style=margin-top:5px;>
-                            </input>
-                            <label for="payment-method-1" style="margin-left:10px;">
-                                <h6>Thu tiền khi giao hàng (COD)</h6>
-                            </label>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                             </table>
                         </div>
                         <div class="order-button">
-                            <button id="confirm-order">
+                            <button id="confirm-order" type="submit">
                                 ĐẶT HÀNG
                             </button>
                         </div>
@@ -225,7 +225,7 @@
                             <label for="orderNote">
                                 <h6>Ghi chú đơn hàng:</h6>
                             </label>
-                            <textarea name="orderNote" id="orderNote"></textarea>
+                            <textarea style="margin-top:10px" name="orderNote" id="orderNote"></textarea>
                             <div class="description">
                                 <h6>* Quý khách khó khăn trong việc đặt hàng hoặc cần tư vấn đổi trả hàng vui lòng gọi:
                                     <b>1900.636100</b> hoặc <b>028.7300.6800</b></h6>
