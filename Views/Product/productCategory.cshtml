@@ -1,0 +1,223 @@
+@{
+  Layout = "_Layout";
+}
+@model List<Product>
+@section Css{
+    <link rel="stylesheet" href="/style-product-category.css" />
+    <link rel="stylesheet" href="_responsive.css" />
+    <style>
+      .pagination button{
+        cursor: pointer;
+      }
+      .pagination button.active{
+        background-color: #f5447b;
+        color: white;
+      }
+    </style>
+}
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Danh mục sản phẩm</a></li>
+            <li><a href="#">Thời trang trẻ em</a></li>
+            <li><a href="#">Quần áo bé trai</a></li>
+            <li><a href="#">Đồ bộ bé trai</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="search">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h5><b>ĐỒ BỘ BÉ TRAI</b></h5>
+            </div>
+            <div class="filter">
+              <div class="row">
+                <div class="dropdown">
+                  <a href="#" class="item__link" style="font-size: 16px;">Lọc: <b>Từ 10 - 12kg</b></a>
+                  <div class="dropdown-content">
+                    <div class="dropdown-list">
+                      <h6><a href="#">Tất cả</a></h6>
+                      <h6><a href="#">Từ 8 - 10kg</a></h6>
+                      <h6><a href="#">Từ 12 - 14kg</a></h6>
+                      <h6><a href="#">Từ 14 - 15kg</a></h6>
+                      <h6><a href="#">Từ 15 - 17kg</a></h6>
+                      <h6><a href="#">Từ 17 - 19kg</a></h6>
+                      <h6><a href="#">Từ 19 - 22kg</a></h6>
+                      <h6><a href="#">Từ 22 - 26kg</a></h6>
+                      <h6><a href="#">Từ 26 - 28kg</a></h6>
+                      <h6><a href="#">Từ 28 - 31kg</a></h6>
+                      <h6><a href="#">Từ 31 - 34kg</a></h6>
+                      <h6><a href="#">Từ 34 - 48kg</a></h6>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="fixed-center">
+                  <i class="fas fa-sort-down"></i>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <ul class="box-filter">
+                <li class="box-weight">Tìm theo cân nặng:</li>
+                <li class="select-box">
+                  <select name="weight" id="orderby">
+                    <option value="0">Tất cả</option>
+                    <option value="1">8 - 10kg</option>
+                    <option value="2">10 - 12kg</option>
+                    <option value="3">12 - 14kg</option>
+                    <option value="4">14 - 15kg</option>
+                    <option value="5">15 - 17kg</option>
+                    <option value="6">22 - 26kg</option>
+                    <option value="7">26 - 28kg</option>
+                    <option value="8">28 - 31kg</option>
+                    <option value="9">31 - 34kg</option>
+                    <option value="10">34kg++</option>
+                    <option value="11">40KG++</option>
+                  </select>
+                </li>
+                <li class="check-box">
+                  <input type="checkbox" id="discount" name="discount" value="Giảm Giá">
+                  <label for="discount"> Giảm giá</label><br>
+                  <span class="checkmark"></span>
+                </li>
+                <li class="check-box">
+                  <input type="checkbox" id="setBoy" name="setBoy" value="Đồ bộ bé trai">
+                  <label for="setBoy"> Đồ bộ bé trai</label><br>
+                </li>
+                <li class="check-box">
+                  <input type="checkbox" id="swimBoy" name="swimBoy" value="Đồ bơi bé trai">
+                  <label for="swimBoy"> Đồ bơi bé trai</label><br>
+                </li>
+                <li class="check-box">
+                  <input type="checkbox" id="pantsBoy" name="pantsBoy" value="Quần cho bé trai">
+                  <label for="pantsBoy">Quần cho bé trai</label><br>
+                </li>
+                <li class="check-box">
+                  <input type="checkbox" id="shirtBoy" name="shirtBoy" value="Áo cho bé trai">
+                  <label for="shirtBoy"> Áo cho bé trai</label><br>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hot-product">
+        <div class="container">
+          <div class="row mt-50">
+            @foreach (var item in Model)
+            {
+              <div class="col-3">
+              <div class="product">
+                <div class="product-image">
+                  <a href="/product/@item.Id">
+                     <img src="@item.Image" />
+                  </a>
+                </div>
+                <div class="description">
+                  <h6>
+                    @item.Title
+                  </h6>
+                </div>
+                <div class="price">
+                  <h6>@item.Price.ToString("N3") đ</h6>
+                </div>
+              </div>
+            </div>
+            }
+          <div class="pagination">
+            <div class="row">
+              <h5 style="margin-top: 10px;font-size: 14px;">TRANG:</h5>
+              @for (int i = 1; i <= ViewBag.TotalPage; i++)
+              {
+                if(ViewBag.CurentPage == i){
+                 <a href="/product/search?query=@ViewBag.Query&page=@i"><button class="active">@i</button></a>
+                }
+                else{
+                 <a href="/product/search?query=@ViewBag.Query&page=@i"><button>@i</button></a>
+                }
+              }
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="popular-product">
+        <div class="container">
+          <div class="row" style="margin:10px 0px;">
+            <h6 class="description">Mới được đặt hàng</h6>
+            <h6 class="description" style="color:black;background: #EEE;width: 89.25%;">Phổ biến</h6>
+          </div>
+          <div class="row">
+            <div class="popular-product-image">
+              <img src="/images/boreboktrang-265x265.jpg" />
+            </div>
+            <div class="popular-product-image">
+              <img src="/images/botunnelvang-265x265.jpg" />
+            </div>
+            <div class="popular-product-image">
+              <img src="/images/setkakino1-265x265.jpg" />
+            </div>
+            <div class="popular-product-image">
+              <img src="/images/setkakino2-265x265.jpg" />
+            </div>
+            <div class="popular-product-image">
+              <img src="/images/SETJEANSMICKEYP2-265x265.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advertise">
+        <div class="container">
+          <div class="advertise-title">
+            <h5><b>ĐỒ BỘ BÉ TRAI RẺ & ĐẸP - BEXINHSHOP.VN</b></h5>
+          </div>
+          <div class="row">
+            <div class="advertise-image">
+              <img src="/images/BOHUOUVANG.jpg" alt="">
+            </div>
+            <div class="advertise-description">
+              <h6>
+                <b>Đồ bộ bé trai</b> iá rẻ, mẫu mã đẹp, họa tiết phong phú là các nhân vật hoạt hình, siêu nhân, hình thú... cho bé 
+                <a href="#" style="color:blue;text-decoration: underline;">đi chơi,đi học. </a>
+                Quần áo  bé trai bán tại cửa hàng chất liệu tốt, giá rẻ được rất nhiều mẹ quan tâm tại Tp.HCM.
+              </h6>
+              <h6>
+                Đồ bộ bé trai của bexinhshop.vn bán được thiết kế với đa dạng phong cách từ kiểu dáng xinh đẹp, dễ thương đến kiểu dáng theo xu hướng thời trang như đồ người lớn. Đâu chỉ vậy, những bộ đồ này còn được phối hợp màu sắc tươi sáng cực kỳ ăn ý, kết hợp cùng những hoạ tiết từ hoạt hình, chữ số, hoa lá hoặc thú vật rất ngộ nghĩnh và đáng yêu. 
+                Bé xinh đảm bảo đáp ứng được mọi nhu cầu chọn lựa quần áo đẹp cho bé của các mẹ.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      @* <div class="recent-product">
+        <div class="row">
+          <div class="col-1">
+              <h6>Sản phẩm <br/>vừa xem:</h6>
+          </div>
+          <div class="col-1">
+            <div class="recent-product-image">
+              <img src="/images/boy-clothes/1.jpg" />
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="recent-product-image">
+              <img src="/images/boy-clothes/2.jpg" />
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="recent-product-image">
+              <img src="/images/boy-clothes/3.jpg" />
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="recent-product-image">
+              <img src="/images/boy-clothes/4.jpg" />
+            </div>
+          </div>
+        </div>
+    </div> *@
+      

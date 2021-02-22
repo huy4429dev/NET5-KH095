@@ -1,0 +1,91 @@
+@{
+  Layout = "_Layout";
+}
+@model List<CartItem>
+@section Css{
+    <link rel="stylesheet" href="/style-product-detail.css" />
+    <link rel="stylesheet" href="/_responsive.css" />
+    <style>
+        td, th {
+            padding: 10px;
+        }
+    </style>
+
+}
+
+@if (Model.Count > 0) {
+  decimal total = 0;
+  int stt = 1;
+
+      <table class="table">
+    <tr>
+      <th>#</th>
+      <th>Sản phẩm</th>
+      <th>Giá</th>
+      <th>Số lượng</th>
+      <th>Thành tiền</th>
+      <th></th>
+    </tr>
+    @foreach (var cartitem in Model)
+    {
+        var thanhtien = cartitem.quantity * cartitem.product.Price;
+        total = total + (decimal)thanhtien;
+
+        <tr>
+           <td>@(stt++)</td>
+           <td>@cartitem.product.Title</td>
+           <td>@(cartitem.product.Price.ToString("n0"))</td>
+           <td><input asp-for="@cartitem.quantity" id="@($"quantity-{cartitem.product.Id}")"/></td>
+           <td>@(thanhtien.ToString("n0"))</td>
+           <td>
+              <button class="btn btn-success updatecartitem" 
+                    data-productid="@cartitem.product.Id">Cập nhật</button>
+              <a href="/removecart/@cartitem.product.Id"
+                class="btn btn-danger">Xóa</a>
+           </td>
+        </tr>
+    }
+      <tr>
+          <td colspan="4" class="text-right">Tổng tiền</td>
+          <td>@(total.ToString("n0"))</td>
+          <td></td>
+      </tr>
+  </table>
+
+    @section Script {
+         <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".updatecartitem").click(function (event) {
+                    event.preventDefault();
+                    var productid = $(this).attr("data-productid");
+                    var quantity = $("#quantity-" + productid).val();
+                    var data = {
+                            productid: productid,
+                            quantity: quantity
+                        };
+                    console.log(data);
+                    fetch("@Url.RouteUrl("updatecart")",{
+                          method: 'POST', // or 'PUT'
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    })
+                    .then(data => {
+                         window.location.href = "@Url.RouteUrl("cart")";
+                    });
+                });
+            });
+        </script>
+    }
+}
+else{<p 
+    class="alert alert-danger"
+    style="text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    color: red;"
+    >Giỏ hàng trống
+    </p>
+}

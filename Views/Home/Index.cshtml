@@ -1,0 +1,196 @@
+﻿@{
+  Layout = "_Layout";
+}
+@section Css{
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="_responsive.css" />
+}
+<div class="banner" style="margin-top: 0px">
+  <a href="https://www.bexinhshop.vn/set-ao-croptop-quan-tole-alibaba-hoa-tiet-de-thuong-cho-be-gai-3-8-tuoi-bgb118181.html"
+    onclick="ga('send', 'event', 'BannerHome1', 'clickBanner', 'set-alibaba');">
+    <img src="images/banner-style-street.jpg" style="margin: 0px auto 0px auto" /></a>
+
+  <div id="adverts">
+    <div class="row">
+      <div class="adverts-item col-4">
+        <a href="#" rel="nofollow">
+          <span class="text-advert-header">Giao hàng miễn phí</span>
+          <span class="text-advert-subheader">Đơn hàng từ 250K</span>
+        </a>
+      </div>
+      <div class="adverts-item col-4">
+        <a rel="nofollow" href="#">
+          <span class="text-advert-header">Dễ dàng đổi trả hàng</span>
+          <span class="text-advert-subheader">Trong vòng 3 ngày</span>
+        </a>
+      </div>
+      <div class="adverts-item col-4">
+        <a rel="nofollow" href="#">
+          <span class="text-advert-header">Đặt hàng trực tuyến</span>
+          <span class="text-advert-subheader">Hotline : 1900.636.100</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hot-product">
+  <div class="title">
+    <h2 class="title-description">Sản phẩm hot trong tuần</h2>
+  </div>
+  <div class="row mt-50">
+    @foreach (var item in ViewBag.ProductHots)
+    {
+     <div class="col-3">
+      <div class="product">
+        <div class="product-image">
+          <a href="/product/@item.Id">
+            <img src="@item.Image" />
+          </a>
+        </div>
+        <div class="description">
+          <h6>
+            @item.Title
+          </h6>
+        </div>
+        <div class="price">
+          <h6>@item.Price.ToString("N3") đ</h6>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+
+<div class="product-category">
+  <div class="title">
+    <h2 class="title-description">Danh mục sản phẩm</h2>
+  </div>
+  <div class="category">
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/1.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/2.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/3.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/4.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/5.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/6.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/7.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+    <div class="category-card">
+      <div class="category-image">
+        <img src="images/category/8.jpg" />
+      </div>
+      <div class="description">
+        <h6>Quần áo bé gái</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="children-fashion">
+  <div class="title">
+    <h2 class="title-description">Thời trang trẻ em mới về</h2>
+  </div>
+  <div class="row mt-50">
+  @foreach (var item in ViewBag.ProductNews)
+    {
+     <div class="col-3">
+      <div class="product">
+        <div class="product-image">
+          <a href="/product/@item.Id">
+            <img src="@item.Image" />
+          </a>
+        </div>
+        <div class="description">
+          <h6>
+            @item.Title
+          </h6>
+        </div>
+        <div class="price">
+          <h6>@item.Price.ToString("N3") đ</h6>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+  <div class="show-more-btn">
+    <a style="color: gray;"  href="/product/search">Xem thêm</a>
+  </div>
+</div>
+@* <div class="recent-product">
+  <div class="row">
+    <div class="col-1">
+      <h6>Sản phẩm <br />vừa xem:</h6>
+    </div>
+    <div class="col-1">
+      <div class="recent-product-image">
+        <img src="images/children-fashion/1.jpg" />
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="recent-product-image">
+        <img src="images/children-fashion/2.jpg" />
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="recent-product-image">
+        <img src="images/children-fashion/3.jpg" />
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="recent-product-image">
+        <img src="images/children-fashion/4.jpg" />
+      </div>
+    </div>
+  </div>
+</div> *@
+
+
+

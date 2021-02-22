@@ -1,0 +1,239 @@
+@{
+  Layout = "_Layout";
+}
+@model List<Product>
+@section Css{
+    <link rel="stylesheet" href="/style-product-category.css" />
+    <link rel="stylesheet" href="_responsive.css" />
+}
+
+<div class="payment">
+    <div class="container">
+        <div class="payment-option row">
+            <div class="option-wrap row">
+                <input type="radio" id="acc-type-1" name="acc-type" value="acc-type-1" style=margin-top:5px;>
+                </input>
+                <label for="acc-type-1" style="margin-left:10px;">
+                    <h6>Đăng ký tài khoản</h6>
+                </label>
+            </div>
+            <div class="option-wrap row">
+                <input type="radio" id="acc-type-2" name="acc-type" value="acc-type-2" style=margin-top:5px;>
+                </input>
+                <label for="acc-type-2" style="margin-left:10px;">
+                    <h6>Mua hàng không cần tài khoản</h6>
+                </label>
+            </div>
+        </div>
+        <div class="payment-detail">
+            <div class="row">
+                <div class="col-4">
+                    <div class="payment-info-box">
+                        <div class="title row">
+                            <i class="fa fa-user" aria-hidden="true" style="font-size:22px;"></i>
+                            <h5 class="ml-20">Thông tin giao hàng</h5>
+                        </div>
+                        <div class="payment-info">
+                            <div class="row">
+                                <div class="col-6 pt-5">
+                                    *Tên:
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" style="margin-top:0px;" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pt-10">
+                                    Email:
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pt-11">
+                                    *Điện thoại:
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div class="row mt-30">
+                                <div class="col-6 pt-11">
+                                    Địa chỉ:
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="address" name="address">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pt-11">
+                                    Quận / Huyện:
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="district" name="district">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pt-11">
+                                    *Tỉnh:
+                                </div>
+                                <div class="col-6">
+                                    <select name="province" id="province">
+                                        <option value="0">An Giang</option>
+                                        <option value="1">Bà Rịa - Vũng Tàu</option>
+                                        <option value="2">Bắc Giang</option>
+                                        <option value="3">Bắc Kan</option>
+                                        <option value="4">Bạc Liêu</option>
+                                        <option value="5">Bắc Ninh</option>
+                                        <option value="6">Bến Tre</option>
+                                        <option value="7">Bình Dương</option>
+                                        <option value="8">Bình Phước</option>
+                                        <option value="9">Bình Thuận</option>
+                                        <option value="10">Bình Định</option>
+                                        <option value="11">Cà Mau</option>
+                                        <option value="12">Cần Thơ</option>
+                                        <option value="13">Cao Bằng</option>
+                                        <option value="14">Dak Lak</option>
+                                        <option value="15">Dak Nông</option>
+                                        <option value="16">Gia Lai</option>
+                                        <option value="17">Hà Giang</option>
+                                        <option value="18">Hà Nam</option>
+                                        <option value="19">Hà Nội</option>
+                                        <option value="20">Hà Tây</option>
+                                        <option value="21">Hà Tĩnh</option>
+                                        <option value="22">Hải Dương</option>
+                                        <option value="23">Hải Phòng</option>
+                                        <option value="24">Hậu Giang</option>
+                                        <option value="25" selected="selected">Hồ Chí Minh</option>
+                                        <option value="26">Hòa Bình</option>
+                                        <option value="27">Hòa Bình</option>
+                                        <option value="28">Huế</option>
+                                        <option value="29">Hưng Yên</option>
+                                        <option value="30">Khánh Hòa</option>
+                                        <option value="31">Kiên Giang</option>
+                                        <option value="32">Kontum</option>
+                                        <option value="33">Lai Châu</option>
+                                        <option value="34">Lâm Đồng</option>
+                                        <option value="35">Lạng Sơn</option>
+                                        <option value="36">Lào Cai</option>
+                                        <option value="37">Long An</option>
+                                        <option value="38">Nam Định</option>
+                                        <option value="39">Nghệ An</option>
+                                        <option value="40">Ninh Bình</option>
+                                        <option value="41">Ninh Thuận</option>
+                                        <option value="42">Phú Thọ</option>
+                                        <option value="43">Phú yên</option>
+                                        <option value="44">Quảng Bình</option>
+                                        <option value="45">Quãng Nam</option>
+                                        <option value="46">Quãng Ngãi</option>
+                                        <option value="47">Quãng Ninh</option>
+                                        <option value="48">Quãng Trị</option>
+                                        <option value="49">Sóc Trăng</option>
+                                        <option value="50">Sơn La</option>
+                                        <option value="51">Tây Ninh</option>
+                                        <option value="52">Thái Bình</option>
+                                        <option value="53">Thái Nguyên</option>
+                                        <option value="54">Thanh Hóa</option>
+                                        <option value="55">Tiền Giang</option>
+                                        <option value="56">Trà Vinh</option>
+                                        <option value="57">Tuyên Quang</option>
+                                        <option value="58">Vĩnh Long</option>
+                                        <option value="59">Vĩnh Phúc</option>
+                                        <option value="60">Yên Bái</option>
+                                        <option value="61">Đà Nẵng</option>
+                                        <option value="62">Điện Biên</option>
+                                        <option value="63">Đồng Nai</option>
+                                        <option value="64">Đồng Tháp</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-info">
+                        <div class="title row">
+                            <i class="fas fa-box-open" aria-hidden="true" style="font-size:22px;"></i>
+                            <h5 class="ml-20">Vận chuyển</h5>
+                        </div>
+                        <div class="mt-20">
+                            <h6 class="description">
+                                Giao hàng đến <span class="clr-pink"><b>Hồ Chí Minh</b></span> với phí <span
+                                    class="clr-pink"><b> 17.000 đ</b></span><br />
+                                <span class="clr-blue">- Thời gian nhận hàng: 1 - 2 ngày.</span>
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="payment-method">
+                        <div class="title row">
+                            <i class="fas fa-dollar-sign" aria-hidden="true" style="font-size:22px;"></i>
+                            <h5 class="ml-20">Thanh toán</h5>
+                        </div>
+                        <div class="method-option row">
+                            <input type="radio" id="payment-method-1" name="payment-method" value="payment-method-1"
+                                style=margin-top:5px;>
+                            </input>
+                            <label for="payment-method-1" style="margin-left:10px;">
+                                <h6>Thu tiền khi giao hàng (COD)</h6>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="invoice-box">
+                        <div class="title row mt-20">
+                            <i class="fas fa-box-open" aria-hidden="true" style="font-size:22px;"></i>
+                            <h5 class="ml-20">Đơn hàng</h5>
+                        </div>
+                        <div class="invoice-detail">
+                            <table class="table cart">
+                                <thead>
+                                    <tr>
+                                        <td>Tên sản phẩm</td>
+                                        <td style="display:none;">Mã hàng</td>
+                                        <td>Số lượng</td>
+                                        <td>Đơn giá</td>
+                                        <td>Tổng sản phẩm</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table class="table summary">
+                                <tbody>
+                                    <tr>
+                                        <td class="text">Thành tiền:</td>
+                                        <td class="total">111.000 đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text">Phí vận chuyển:</td>
+                                        <td class="total">111.000 đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text big-text"><b>TỔNG CỘNG:</b></td>
+                                        <td class="total big-text"><b>111.000 đ</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="order-button">
+                            <button id="confirm-order">
+                                ĐẶT HÀNG
+                            </button>
+                        </div>
+                        <div class="order-note">
+                            <label for="orderNote">
+                                <h6>Ghi chú đơn hàng:</h6>
+                            </label>
+                            <textarea name="orderNote" id="orderNote"></textarea>
+                            <div class="description">
+                                <h6>* Quý khách khó khăn trong việc đặt hàng hoặc cần tư vấn đổi trả hàng vui lòng gọi:
+                                    <b>1900.636100</b> hoặc <b>028.7300.6800</b></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

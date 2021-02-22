@@ -1,0 +1,6 @@
+@media (max-width: 1440px) {
+  .product .image {
+    height: 296px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,264 @@
+@{
+  Layout = "_Layout";
+}
+@section Css{
+    <link rel="stylesheet" href="/style-product-detail.css" />
+    <link rel="stylesheet" href="/_responsive.css" />
+}
+@model Product
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Danh mục sản phẩm</a></li>
+            <li><a href="#">Thời trang trẻ em</a></li>
+            <li><a href="#">Quần áo bé trai</a></li>
+            <li><a href="#">Đồ bộ bé trai</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-content">
+        <div class="container">
+          <div class="title text-center" style="margin:30px 0px 30px 0px;">
+            <h5 style="font-size:22px;color:black;">@Model?.Title</h5>
+          </div>
+          <div class="product-detail">
+            <div class="row">
+              <div class="product-images">
+                <div class="row">
+                  <div class="product-thumbnails">
+                    @{
+                        var images = Model.Images?.Split(",") ?? new string[0];
+                    }
+                    @foreach (var item in images)
+                    {
+                        <div class="thumbnail">
+                           <img src="@item" />
+                        </div>
+                    }
+                  </div>
+                  <div class="product-full-image">
+                    <img src="@Model.Image" />
+                  </div>  
+                </div>
+                <div class="product-description">
+                 @Html.Raw(Model.Description)
+                </div>
+              </div>
+
+              <div class="product-description-board">
+                <div class="price">
+                  <h5>@Model.Price.ToString("N3") đ</h5>
+                </div>
+                <div class="size">
+                  <div class="title">
+                    <h6><b>CHỌN KÍCH CỠ</b></h6>
+                  </div>
+                  <div class="att-board">
+                    <h6 style="font-size:12px;">Màu sắc</h6>
+                    <div class="mt-20">
+                      <div class="att-options">
+                          @{
+                              var colors = Model.Colors?.Split(",") ?? new string[0];
+                          }
+                              @foreach (var item in colors)
+                          {
+                            <label for="" class="item-option">Màu @item</label>
+                          }
+                      </div>
+                    </div>
+                    <h6 style="font-size:12px;margin-top:15px;">
+                      Kích thước (<u>Xem chi tiết kích cỡ)</u>
+                      <a href="#" class="fixed-center-sm" style="color:black;">
+                        <i class="fas fa-sort-down"></i>
+                    </a>
+                    </h6>
+                    <div class="mt-10">
+                      <div class="att-options">
+                          @{
+                              var sizes = Model.Sizes?.Split(",") ?? new string[0];
+                          }
+                          @foreach (var item in sizes)
+                          {
+                              <label for="" class="item-option">@item</label>
+                          }
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-20">
+                    <div class="row" style="padding-left:15px;">
+                      <h6 style="margin-top:5px;" >Số lượng:</h6>
+                      <div class="select-quantity-box">
+                        <select name="quantity" id="quantity">
+                          <option value="0">1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                          <option value="4">5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart">
+                    <form action="/addcart" method="GET">
+                      <input type="text" name="id" hidden value="@Model.Id">
+                     <input type="submit" value="MUA NGAY" id="button-cart"  class="addtocart" style="margin: 0px !important;">
+                    </form>
+                  </div>
+                  <div class="love d-flex mt-30">
+                    <div class="image">
+                        <img
+                        src="/images/love.png"
+                        style="margin: 0px auto 0px auto"
+                    /></a>
+                    </div>
+                    <a href="#" id="wishlist-total" class="wish_details" rel="nofollow" style="color:grey;font-size:12px;"
+                      ><u>Yêu thích</u></a
+                    >
+                  </div>
+                  <div class="note">
+                    <h6>
+                      <b style="color:green;font-size:15px;">- Miễn phí vẫn chuyển</b>
+                      đơn hàng từ 500.000đ trên Toàn quốc. Riêng TPHCM, miễn phí đơn hàng từ 250.000đ.
+                    </h6>
+                    <h6 style="color:green;">
+                      BÉ XINH CAM KẾT:
+                    </h6>
+                    <h6>
+                      - KHÔNG bán hàng kém chất lượng.
+                    </h6>
+                    <h6>
+                      - Sản phẩm y như hình
+                    </h6>
+                    <h6>
+                      - Đổi trả dễ dàng nếu không vừa ý.
+                    </h6>
+                    <h6>
+                      - Sẽ có mặt tại nhà bạn từ 1-5 ngày làm việc.
+                    </h6>
+                  </div>
+                  <div class="mt-20">
+                    <div class="tag row">
+                      <h6><i>Từ khóa:</i><span style="color:#F5447B">
+                          @string.Join(", ",Model.ProductTags.Select(item => item.Tag.Name))
+                      </span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular-product">
+        <div class="container">
+          <div class="popular-product-board">
+            <div class="title mb-20">
+              <h6>Có thể bạn quan tâm</h6>
+            </div>
+            <div class="popular-product-box">
+              @foreach (var item in ViewBag.productPopular)
+              {
+                <div class="product-image">
+                  <a href="/product/@item.Id"><img src="@item.Image" alt=""></a>
+                </div>
+              }
+            </div>
+            <div class="owl-buttons">
+              <div class="owl-next text-center">&rsaquo;</div>
+              <div class="owl-prev text-center">&lsaquo;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-detail">
+        <div class="container">
+          <div class="tab row">
+            <div class="tab-item" style="width:5%;background-color: #F5447B;
+            color: white;" >
+              <h6>Mô tả</h6>  
+            </div>
+            <div class="tab-item" style="width:12%">
+              <h6>Phí vẫn chuyển</h6>  
+            </div>
+            <div class="tab-item"style="width:83%">
+              <h6>Bảng size</h6>  
+            </div>
+          </div>
+          <div class="product-content-detail">
+            <div class="title mt-20 mb-20">
+              <h4><b>@Model.Title</b></h4>
+            </div>
+            <div class="product-att">
+              <h6>Thuộc tính sản phẩm</h6>
+              <div class="product-att-detail">
+                 @Html.Raw(Model.Description)
+              </div>
+              <div class="product-full-images">
+                <div class="product-image-board">
+                  <img src="/images/setthuncotruquankakixam.jpg" />
+                </div>
+                <div class="product-image-board">
+                  <img src="/images/setcotruden.jpg" />
+                </div>
+                <div class="product-image-board">
+                  <img src="/images/setcotrudentrang.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="guide">
+              <div class="guide-title">
+                <h4><b>CÁCH GIẶT ỦI VÀ BẢO QUẢN QUẦN ÁO TRẺ EM</b> </h4>
+              </div>
+              <div class="guide-description">
+                <h6>- Vò bằng tay với lần giặt đầu tiên, giặt bằng nước lã và không có xà phòng
+                   để lớp in mềm hơn, chống bong tróc. Nên giặt sản phẩm bằng nước lạnh 
+                   hoặc nước nóng dưới 40 độ vì nếu giặt trong nước quá nóng sẽ làm vải giãn ra và lỏng sản phẩm.
+                </h6>
+                <h6>- Để giữ màu sản được lâu và không bị ra màu trong quá trình giặt, mẹ có thể ngâm sản phẩm trong nước ấm 
+                  có pha chút giấm trong khoảng 15-20 phút.
+                </h6>
+                <h6>- Không đổ trực tiếp các loại xà bông hoặc nước tẩy lên hình in. Mẹ nên hạn chế dùng các loại nước xả mềm vải vì nó sẽ làm sản phẩm bị giãn rất nhanh và khiến hình in bị mềm, dễ bong tróc. Nế n muốn sản phẩm thơm 
+                  hơn sau khi giặt, mẹ có thể dùng các loại nước xả thơm.
+                </h6>
+                <h6>- Không nên để sản phẩm ở những nơi ẩm ướt, với tính chất hút ẩm, hút nước tốt, sản phẩm dễ bị ẩm mốc, thậm chí để lại những vết ố trên vải. Tránh phơi sản phẩm 
+                  trực tiếp dưới nắng vì sẽ làm màu và hình in phai màu.
+                </h6>
+                <h6>- Khi ủi sản phẩm tuyệt đối không được ủi lên bề mặt in hình trên sản phẩm, nên ủi ở nhiệt độ thấp và lộn trái sản phẩm ra trước khi ủi để tránh làm chết màu sắc của vải và làm bong tróc
+                   hay biến dạng những hình ảnh được in trên sản phẩm.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hot-product">
+        <div class="container">
+          <div class="hot-product-board">
+            <div class="title" style="margin-bottom:10px">
+              <h6>SẢN PHẨM HOT TRONG TUẦN</h6>
+            </div>
+            <div class="hot-product-box">
+              <div class="product-image">
+                <a href="#"><img src="/images/hot-product/boreboktrang.jpg" alt=""></a>
+              </div>
+              <div class="product-image">
+                <a href="#"><img src="/images/hot-product/SETJEANSCOTRUNYDO.jpg" alt=""></a>
+              </div>
+              <div class="product-image">
+                <a href="#"><img src="/images/hot-product/setjeansmeotomdo.jpg" alt=""></a>
+              </div>
+              <div class="product-image">
+                <a href="#"><img src="/images/hot-product/setjeansmeotomvang1.jpg" alt=""></a>
+              </div>
+              <div class="product-image">
+                <a href="#"><img src="/images/hot-product/setthuncotruquankakixam.jpg" alt=""></a>
+              </div>
+            </div>
+            <div class="owl-buttons">
+              <div class="owl-next text-center">&rsaquo;</div>
+              <div class="owl-prev text-center">&lsaquo;</div>
+            </div>
+          </div>
+        </div>
+      </div>
