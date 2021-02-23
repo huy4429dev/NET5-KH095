@@ -162,7 +162,6 @@ img {
 }
 
 .btn {
-  background: #7fc9fb;
   color: #fff;
   font-size: 14px;
   padding: 10px 23px;
@@ -227,7 +226,6 @@ input[type="text"] {
   font-size: 17px;
   border: none;
   border-radius: 10px;
-  width: 300px;
   outline: none;
 }
 
@@ -543,6 +541,40 @@ a.wish-details {
   transition: all ease-in-out 0.5s;
 }
 
+/*------------------------------Popular Product------------------------------*/
+
+.popular-product {
+  overflow: hidden;
+  margin: 50px auto 35px auto;
+}
+
+.popular-product .container {
+  background-color: white;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.popular-product .popular-product-description {
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  background-color: #f5447b;
+}
+
+.popular-product .popular-product-image {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popular-product .popular-product-image img {
+  max-height: 245px;
+}
+
+.popular-product .popular-product-image img:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.5s;
+}
+
 /*------------------------------Recent Product------------------------------*/
 
 .recent-product {
@@ -554,7 +586,29 @@ a.wish-details {
 }
 
 .recent-product img {
-  max-width: 110px;
+  max-width: 245px;
+}
+
+.recent-product .container {
+  background-color: white;
+  margin-left: 20px;
+}
+
+.recent-product .description {
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  background-color: #f5447b;
+}
+
+.recent-product .recent-product-image {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.recent-product .recent-product-image img:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.5s;
 }
 
 /*------------------------------Footer------------------------------*/

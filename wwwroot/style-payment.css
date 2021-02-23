@@ -373,6 +373,7 @@ img {
   width: 100%;
   text-transform: uppercase;
   font-size: 18px !important;
+  cursor: pointer;
 }
 
 .payment .order-note {
