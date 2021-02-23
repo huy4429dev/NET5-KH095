@@ -2,6 +2,8 @@
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 @{
     var Categories = HttpContextAccessor.HttpContext.Session.Get<List<ProductType>>("categories");
+    var cart = HttpContextAccessor.HttpContext.Session.Get<List<CartItem>>("cart");
+
 }
 
 <!DOCTYPE html>
@@ -136,7 +138,7 @@
             style="font-size: 30px; color: #ffffff;margin-top:5px"
           ></i>
           <span class="cart-total">
-            0 item(s) - 0 đ
+            @(cart?.Count() != null ? cart.Count : 0 ) item(s) - 0 đ
           </span>
           <a href="#" class="fixed-center">
             <i class="fas fa-sort-down"></i>

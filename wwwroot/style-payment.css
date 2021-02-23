@@ -1,0 +1,456 @@
+/*===============  1. RESET CSS ==============*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+/*===============  2. DEFAULT STYLE ==============*/
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  background-color: #fff;
+}
+
+p {
+  font-size: 14px;
+  color: #5e629c;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.float-right {
+  position: relative;
+  float: right;
+}
+
+.col-1 {
+  flex: 8.33%;
+  max-width: 8.33%;
+}
+
+.col-2 {
+  flex: 16.66%;
+  max-width: 16.66%;
+}
+
+.col-3 {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 33%;
+  max-width: 33%;
+}
+
+.col-5 {
+  flex: 42%;
+  max-width: 42%;
+}
+
+.col-6 {
+  flex: calc(100% / 12 * 6);
+  max-width: calc(100% / 12 * 6);
+}
+
+.col-8 {
+  flex: calc(100% / 12 * 8);
+  max-width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+  flex: calc(100% / 12 * 12);
+  max-width: calc(100% / 12 * 12);
+}
+
+b,
+strong,
+strong *,
+b * {
+  font-weight: bold;
+}
+div {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+P {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 58px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 45px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  transition: all ease-in-out;
+}
+
+.float-left {
+  float: left;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clr-pink {
+  color: #f5447b;
+}
+
+.clr-blue {
+  color: blue;
+}
+
+/*===============  3.Nav ==============*/
+
+.nav {
+  background-color: #f5447b;
+  max-width: 100%;
+  height: 56px;
+  padding: 5px;
+  position: relative;
+}
+
+.nav .logo {
+  font-size: 2.25rem;
+  font-weight: 400px;
+  color: #ffffff;
+  float: left;
+}
+
+.nav .logo-image {
+  background-color: #ffffff;
+}
+
+/*------------------------------Payment------------------------------*/
+
+.payment {
+  background-image: url(images/back-22.png);
+}
+
+.payment .container {
+  background-color: white;
+  margin: 10px;
+}
+
+.payment .payment-option {
+  margin-top: 10px;
+  background-color: #f2f7fa;
+  margin: 10px;
+  padding: 15px;
+}
+
+.payment .payment-option .option-wrap {
+  margin-left: 30px;
+}
+
+.payment .payment-option h6 {
+  color: #333333;
+  font-weight: 400px;
+}
+
+.payment input[type="radio"] {
+  height: 0.8em;
+}
+
+.payment .payment-detail {
+  padding: 10px;
+}
+
+.payment .payment-info-box {
+  margin-top: 0px;
+}
+
+.payment .payment-detail .title {
+  text-transform: uppercase;
+  padding-left: 15px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 15px;
+}
+
+.payment .payment-detail select {
+  box-shadow: inset 1px 1px 4px rgb(0 0 0 / 10%);
+  background: #f2f7fa;
+  border: 1px solid #cecece;
+  border-radius: 0px;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px;
+  color: #333333;
+  margin-top: 5px;
+  outline-width: none;
+  width: 88%;
+}
+
+.payment .payment-info {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.payment .payment-info input {
+  box-shadow: inset 1px 1px 4px rgb(0 0 0 / 10%);
+  background: #f2f7fa;
+  border: 1px solid #cecece;
+  border-radius: 0px;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px;
+  color: #333333;
+  margin-top: 5px;
+  outline-width: 1px;
+  outline-color: #f5447b;
+}
+
+.payment .delivery-info {
+  padding-top: 20px;
+}
+
+.payment .delivery-info .description {
+  padding-left: 10px;
+}
+
+.payment .payment-method {
+  margin-left: 20px;
+}
+
+.payment .payment-method .method-option {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.payment .invoice-box {
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: -20px;
+}
+
+.payment .invoice-detail {
+  padding: 15px 10px;
+}
+
+.payment table {
+  border: 1px solid #dddddd;
+}
+
+.payment table td {
+  border-bottom: 1px solid #dddddd;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.payment thead td {
+  text-align: center;
+  background-color: #f2f7fa;
+  border: 1px solid #e1e1e1;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+
+.payment .cart {
+  visibility: visible;
+  display: table;
+  width: 100%;
+}
+
+.payment .summary {
+  text-align: right;
+  visibility: visible;
+  display: table;
+  width: 100%;
+}
+
+.payment .text {
+  width: 80%;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+.payment .big-text {
+  font-size: 15px;
+  background-color: #f2f7fa;
+}
+
+.payment .order-button {
+  padding: 20px;
+}
+
+.payment button {
+  background: none;
+  background-color: #e5101d !important;
+  color: #fff !important;
+  border: 1px #c70410 solid;
+  border-radius: 3px;
+  padding: 13px 10px 10px 35px;
+  font-weight: bold;
+  margin-right: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 18px !important;
+  cursor: pointer;
+}
+
+.payment .order-note {
+  padding: 20px;
+}
+
+.payment .order-note textarea {
+  box-shadow: inset 1px 1px 4px rgb(0 0 0 / 10%);
+  background: #f2f7fa;
+  border: 1px solid #cecece;
+  border-radius: 0px;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px;
+  color: #333333;
+  min-width: 50px;
+  width: 100%;
+  height: 100px;
+  outline: none;
+}
+
+/*------------------------------Spacing------------------------------*/
+.mt-50 {
+  margin-top: 50px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.fixed-center {
+  margin-left: 10px;
+  position: relative;
+  top: -3px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-11 {
+  padding-top: 11px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}

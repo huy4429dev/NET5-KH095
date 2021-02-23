@@ -134,15 +134,37 @@ namespace KH095.Controllers
         [Route("/payment")]
         public IActionResult Payment()
         {
+
             // Xử lý khi đặt hàng
-            return View("/Views/Payment/payment.cshtml");
+            return View("/Views/Payment/payment.cshtml",GetCartItems());
         }
 
-        [Route("/checkout")]
-        public IActionResult CheckOut()
+        [HttpPost("checkout")]
+        public IActionResult CheckOut([FromForm] User model)
         {
+            return Ok("DANG XU LY");
+            if(ModelState.IsValid){
+                var data = HttpContext.Request.Form;
+                return Ok(model);
+            }
+
             // Xử lý khi đặt hàng
-            return View();
+            
+            return View("/Views/Checkout/index.cshtml");
+        }
+
+         private void SkipModelValidate(string keyword)
+        {
+            if (ModelState != null)
+            {
+                foreach (var item in ModelState)
+                {
+                    if (item.Key.Contains(keyword))
+                    {
+                        ModelState.Remove(item.Key);
+                    }
+                }
+            }
         }
 
     }

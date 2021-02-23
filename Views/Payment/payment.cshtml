@@ -1,7 +1,7 @@
 @{
   Layout = "_Layout";
 }
-@model List<Product>
+@model List<CartItem>
 @section Css{
     <link rel="stylesheet" href="~/style-payment.css" />
     <link rel="stylesheet" href="~/styles.css" />
@@ -35,6 +35,7 @@
             </div>
         </div>
         <div class="payment-detail">
+                <form action="/checkout" method="POST">
             <div class="row">
                 <div class="col-4">
                     <div class="payment-info-box">
@@ -48,7 +49,7 @@
                                     *Tên:
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" style="margin-top:0px;" id="name" name="name">
+                                    <input type="text" style="margin-top:0px;" id="name" name="FullName" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -56,7 +57,7 @@
                                     Email:
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" id="email" name="email">
+                                    <input type="text" id="email" name="Email">
                                 </div>
                             </div>
                             <div class="row">
@@ -64,7 +65,7 @@
                                     *Điện thoại:
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" id="phone" name="phone">
+                                    <input type="text" id="phone" name="Phone" required>
                                 </div>
                             </div>
                             <div class="row mt-30">
@@ -72,91 +73,10 @@
                                     Địa chỉ:
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" id="address" name="address">
+                                    <input type="text" id="address" name="Address">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6 pt-11">
-                                    Quận / Huyện:
-                                </div>
-                                <div class="col-6">
-                                    <input type="text" id="district" name="district">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 pt-11">
-                                    *Tỉnh:
-                                </div>
-                                <div class="col-6">
-                                    <select name="province" id="province">
-                                        <option value="0">An Giang</option>
-                                        <option value="1">Bà Rịa - Vũng Tàu</option>
-                                        <option value="2">Bắc Giang</option>
-                                        <option value="3">Bắc Kan</option>
-                                        <option value="4">Bạc Liêu</option>
-                                        <option value="5">Bắc Ninh</option>
-                                        <option value="6">Bến Tre</option>
-                                        <option value="7">Bình Dương</option>
-                                        <option value="8">Bình Phước</option>
-                                        <option value="9">Bình Thuận</option>
-                                        <option value="10">Bình Định</option>
-                                        <option value="11">Cà Mau</option>
-                                        <option value="12">Cần Thơ</option>
-                                        <option value="13">Cao Bằng</option>
-                                        <option value="14">Dak Lak</option>
-                                        <option value="15">Dak Nông</option>
-                                        <option value="16">Gia Lai</option>
-                                        <option value="17">Hà Giang</option>
-                                        <option value="18">Hà Nam</option>
-                                        <option value="19">Hà Nội</option>
-                                        <option value="20">Hà Tây</option>
-                                        <option value="21">Hà Tĩnh</option>
-                                        <option value="22">Hải Dương</option>
-                                        <option value="23">Hải Phòng</option>
-                                        <option value="24">Hậu Giang</option>
-                                        <option value="25" selected="selected">Hồ Chí Minh</option>
-                                        <option value="26">Hòa Bình</option>
-                                        <option value="27">Hòa Bình</option>
-                                        <option value="28">Huế</option>
-                                        <option value="29">Hưng Yên</option>
-                                        <option value="30">Khánh Hòa</option>
-                                        <option value="31">Kiên Giang</option>
-                                        <option value="32">Kontum</option>
-                                        <option value="33">Lai Châu</option>
-                                        <option value="34">Lâm Đồng</option>
-                                        <option value="35">Lạng Sơn</option>
-                                        <option value="36">Lào Cai</option>
-                                        <option value="37">Long An</option>
-                                        <option value="38">Nam Định</option>
-                                        <option value="39">Nghệ An</option>
-                                        <option value="40">Ninh Bình</option>
-                                        <option value="41">Ninh Thuận</option>
-                                        <option value="42">Phú Thọ</option>
-                                        <option value="43">Phú yên</option>
-                                        <option value="44">Quảng Bình</option>
-                                        <option value="45">Quãng Nam</option>
-                                        <option value="46">Quãng Ngãi</option>
-                                        <option value="47">Quãng Ninh</option>
-                                        <option value="48">Quãng Trị</option>
-                                        <option value="49">Sóc Trăng</option>
-                                        <option value="50">Sơn La</option>
-                                        <option value="51">Tây Ninh</option>
-                                        <option value="52">Thái Bình</option>
-                                        <option value="53">Thái Nguyên</option>
-                                        <option value="54">Thanh Hóa</option>
-                                        <option value="55">Tiền Giang</option>
-                                        <option value="56">Trà Vinh</option>
-                                        <option value="57">Tuyên Quang</option>
-                                        <option value="58">Vĩnh Long</option>
-                                        <option value="59">Vĩnh Phúc</option>
-                                        <option value="60">Yên Bái</option>
-                                        <option value="61">Đà Nẵng</option>
-                                        <option value="62">Điện Biên</option>
-                                        <option value="63">Đồng Nai</option>
-                                        <option value="64">Đồng Tháp</option>
-                                    </select>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="delivery-info">
@@ -191,27 +111,39 @@
                             <table class="table cart">
                                 <thead>
                                     <tr>
-                                        <td>Tên sản phẩm</td>
-                                        <td style="display:none;">Mã hàng</td>
+                                        <td style="width: 30%">Tên sản phẩm</td>
                                         <td>Số lượng</td>
                                         <td>Đơn giá</td>
-                                        <td>Tổng sản phẩm</td>
+                                        <td>Tổng tiền</td>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    @foreach ( var item in Model)
+                                    {
+                                        <tr>
+                                            <td style="text-align:center">@item.product.Title</td>
+                                            <td style="text-align:center">@item.quantity</td>
+                                            <td style="text-align:center">@item.product.Price.ToString("N3") đ</td>
+                                            <td style="text-align:center">@((item.quantity * item.product.Price).ToString("N3")) đ</td>
+                                        </tr>
+                                        
+                                    }
+                                </tbody>
                             </table>
                             <table class="table summary">
                                 <tbody>
+                               
                                     <tr>
                                         <td class="text">Thành tiền:</td>
-                                        <td class="total">111.000 đ</td>
+                                        <td class="total">@((Model.Sum(item => item.quantity * item.product.Price)).ToString("N3")) đ</td>
                                     </tr>
                                     <tr>
                                         <td class="text">Phí vận chuyển:</td>
-                                        <td class="total">111.000 đ</td>
+                                        <td class="total">Miễn phí</td>
                                     </tr>
                                     <tr>
                                         <td class="text big-text"><b>TỔNG CỘNG:</b></td>
-                                        <td class="total big-text"><b>111.000 đ</b></td>
+                                        <td class="total big-text"><b> @((Model.Sum(item => item.quantity * item.product.Price)).ToString("N3")) đ</b></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -234,6 +166,7 @@
                     </div>
                 </div>
             </div>
+                </form>
         </div>
     </div>
 </div>
