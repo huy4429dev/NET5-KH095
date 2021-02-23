@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "E:\\project\\c#\\KH095\\KH095.csproj": {}
+    "c:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj": {}
   },
   "projects": {
-    "E:\\project\\c#\\KH095\\KH095.csproj": {
+    "c:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\c#\\KH095\\KH095.csproj",
+        "projectUniqueName": "c:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj",
         "projectName": "KH095",
-        "projectPath": "E:\\project\\c#\\KH095\\KH095.csproj",
-        "packagesPath": "C:\\Users\\lexua\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\c#\\KH095\\obj\\",
+        "projectPath": "c:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\KH095.csproj",
+        "packagesPath": "C:\\Users\\Johnathan Tran\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Johnathan Tran\\Desktop\\New folder (6)\\NET5-KH095\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lexua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Johnathan Tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -100,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
