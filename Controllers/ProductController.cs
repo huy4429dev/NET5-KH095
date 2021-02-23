@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using KH095.Models;
 using KH095.Data;
 using Microsoft.EntityFrameworkCore;
-
+using KH095.Extension;
 namespace KH095.Controllers
 {
     [Route("/product")]
@@ -24,20 +24,39 @@ namespace KH095.Controllers
         }
 
         [HttpGet("search")]
-        public IActionResult Index(string category = null, string q = null, int page = 1, int pageSize = 20)
+        public IActionResult Index(int? categoryId = null, string q = null, int page = 1, int pageSize = 20)
         {
+
+            var Categories = HttpContext.Session.Get<List<ProductType>>("categories");
+
+            if (Categories == null)
+            {
+                var productTypes = db.ProductTypes
+                                     .Where(item => item.ProductTypeChildrens.Any())
+                                     .Select(item => new ProductType
+                                     {
+                                         Id = item.Id,
+                                         Name = item.Name,
+                                         Description = item.Description,
+                                         ProductTypeChildrens = item.ProductTypeChildrens
+                                     })
+                                     .ToList();
+                HttpContext.Session.Set<List<ProductType>>("categories", productTypes);
+                Categories = productTypes;
+            }
             var query = db.Products.AsQueryable();
 
-            if (!string.IsNullOrWhiteSpace(category))
+            if (categoryId != null)
             {
-               query = query.Where(item => item.ProductTypes.Name == category);
+                query = query.Where(item => item.ProductTypes.Id == categoryId);
             }
 
             if (!string.IsNullOrWhiteSpace(q))
             {
-                q = $"%{q}%"; 
-                query =  query.Where(item => EF.Functions.ILike(item.Title,q));
+                q = $"%{q}%";
+                query = query.Where(item => EF.Functions.ILike(item.Title, q));
             }
+
 
             var Products = query
                              .OrderByDescending(item => item.CreatedTime)
@@ -47,7 +66,7 @@ namespace KH095.Controllers
 
             ViewBag.CurentPage = page;
             var totalProduct = query.Count();
-            ViewBag.TotalPage = totalProduct % pageSize == 0 ? totalProduct / pageSize : totalProduct / pageSize + 1 ;
+            ViewBag.TotalPage = totalProduct % pageSize == 0 ? totalProduct / pageSize : totalProduct / pageSize + 1;
             ViewBag.Query = query;
 
             return View("/Views/Product/productCategory.cshtml", Products);
@@ -55,6 +74,24 @@ namespace KH095.Controllers
         [HttpGet("{id}")]
         public IActionResult Detail(int id)
         {
+
+            var Categories = HttpContext.Session.Get<List<ProductType>>("categories");
+
+            if (Categories == null)
+            {
+                var productTypes = db.ProductTypes
+                                     .Where(item => item.ProductTypeChildrens.Any())
+                                     .Select(item => new ProductType
+                                     {
+                                         Id = item.Id,
+                                         Name = item.Name,
+                                         Description = item.Description,
+                                         ProductTypeChildrens = item.ProductTypeChildrens
+                                     })
+                                     .ToList();
+                HttpContext.Session.Set<List<ProductType>>("categories", productTypes);
+                Categories = productTypes;
+            }
             var found = db.Products.Where(item => item.Id == id)
                                     .Select(item => new Product
                                     {

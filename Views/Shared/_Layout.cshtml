@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    var Categories = HttpContextAccessor.HttpContext.Session.Get<List<ProductType>>("categories");
+}
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,6 +31,7 @@
     @if (IsSectionDefined("Css"))
     {
         @RenderSection("Css", required:true)
+
     }
   </head>
   <body>
@@ -44,21 +51,18 @@
           </form>
         </div>
         <ul class="menu__list">
-          <li class="menu__item d-flex">
+          @foreach (var item in Categories)
+          {
+            <li class="menu__item d-flex">
             <div class="dropdown">
-              <a href="#" class="item__link">BÉ GÁI</a>
+              <a href="#" class="item__link">@item.Name</a>
               <div class="dropdown-content">
                 <div class="dropdown-list">
-                  <h6><a href="#">Đồ bộ bé gái</a></h6>
-                  <h6><a href="#">Váy đầm bé gái</a></h6>
-                  <h6><a href="#">Đồ bơi bé gái</a></h6>
-                  <h6><a href="#">Áo bé gái</a></h6>
-                  <h6><a href="#">Quần bé gái</a></h6>
-                  <h6><a href="#">Giày bé gái</a></h6>
-                  <h6><a href="#" style="color: red;">Xem tất cả</a></h6>
-                </div>
-                <div class="dropdown-image">
-                  <img src="/images/dress_navi.png" />
+                  @foreach (var child in item.ProductTypeChildrens)
+                  {
+                    <h6><a href="/product/search?categoryId=@child.Id">@child.Name</a></h6>
+                      
+                  }
                 </div>
               </div>
             </div>
@@ -66,7 +70,10 @@
                   <i class="fas fa-sort-down"></i>
               </a>
             </li>
-          <li class="menu__item d-flex">
+
+          }
+    
+          @* <li class="menu__item d-flex">
             <div class="dropdown">
               <a href="#" class="item__link">BÉ TRAI</a>
               <div class="dropdown-content">
@@ -121,7 +128,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> *@
         </ul>
         <div class="menu__icon">
           <i

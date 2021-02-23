@@ -57,16 +57,16 @@ List<Product> Products = Model;
                                             @foreach (var item in Products)
                                             {
                                                 <tr>
-                                                    <td>@index</td>
-                                                    <td>@item.Title</td>
-                                                    <td>@item.Description</td>
-                                                    <td>
+                                                    <td style="width: 5%">@index</td>
+                                                    <td style="width: 20%">@item.Title</td>
+                                                    <td style="width: 30%; padding: 20px !important; font-weight: 400 !important">@Html.Raw(item.Description.Length < 255 ? item.Description : item.Description.Substring(0,255) + "...")</td>
+                                                    <td style="width: 50px">
                                                         <img style="width:50px" src="@item.Image" alt="">
                                                          
                                                     </td>
-                                                    <td>@item.ProductTypes.Name</td>
-                                                    <td style="width: 100px"><button class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#editCategory@(item.Id)">Sửa</button></td>
-                                                    <td style="width: 100px"><button class="btn btn-danger btn-sm"  type="button" data-toggle="modal" data-target="#deleteModal@(item.Id)">Xóa</button></td>
+                                                    <td style="20%">@item.ProductTypes.Name</td>
+                                                    <td class="text-center" style="width: 100px"><button class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#editCategory@(item.Id)">Sửa</button></td>
+                                                    <td class="text-center" style="width: 100px"><button class="btn btn-danger btn-sm"  type="button" data-toggle="modal" data-target="#deleteModal@(item.Id)">Xóa</button></td>
                                                 </tr>
 
                                                 index ++;

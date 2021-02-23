@@ -16,6 +16,36 @@
     .alert.alert-danger.validation-summary-valid {
         display: none;
     }
+
+input.input-date::-webkit-datetime-edit, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-clear-button {
+  color: #fff;
+  position: relative;
+}
+
+input.input-date::-webkit-datetime-edit-year-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px !important;
+  color:#000;
+  left: 56px;
+}
+
+input.input-date::-webkit-datetime-edit-month-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px !important;
+  color:#000;
+  left: 26px;
+}
+
+
+input.input-date::-webkit-datetime-edit-day-field{
+  position: absolute !important;
+  color:#000;
+  padding: 2px !important;
+  left: 4px;
+  
+}
    </style>
 }   
 
@@ -46,8 +76,15 @@
                             </form>
 
 
-                            <div class="card-header d-flex justify-content-between ">
-                                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addCustomer" ><i class="fas fa-plus"></i></button>
+                            <div class="card-header d-flex align-items-center">
+                                 <form action="/admin/customer/search" method="get">
+                                    <div class="form-group mb-0 mr-1 d-flex">
+                                        <input placeholder="Ngày đăng ký" onfocus="(this.type='date')"  class="form-control" name="fillDate" style="height:31px; border-radius: 0; width: 180px; outline: none">
+                                        <button type="submit" class="btn btn-secondary btn-sm" style="border-radius: 0"><i class="fas fa-filter"></i></button>
+                                    </div>
+                                 </form>
+                                 <button type="button" style="border-radius: 0;" class="btn btn-primary btn-sm mr-1" data-toggle="modal" data-target="#addCustomer" ><i class="fas fa-plus"></i></button>
+                                 <button  class="btn btn-success btn-sm" style="border-radius: 0;" onclick="location.href = '/admin/customer';"><i class="fas fa-redo"></i></button>
                             </div>
                          
                             <div class="card-body">
@@ -57,7 +94,7 @@
                                             <tr>
                                                 <th>#</th>
                                                 <th>Avatar</th>
-                                                <th>Tên khách hàng</th>
+                                                <th>Tài khoản</th>
                                                 <th>Điện thoại</th>
                                                 <th>Email</th>
                                                 <th>Ngày tạo</th>
@@ -78,8 +115,8 @@
                                                     <td>@item.Phone</td>
                                                     <td>@item.Email</td>
                                                     <td>@item.CreatTime.ToString("dd/MM/yyyy")</td>
-                                                    <td style="width:110px" class="text-center">@(item.Status ? @Html.Raw("<i class='far fa-check-circle' style='color: green'></i>"): @Html.Raw("<i class='far fa-times-circle' style='color: red'></i>"))</td>
-                                                    <td class="text-center"><button  style="font-size:10px" class="btn btn-sm btn-success" type="button" data-toggle="modal" data-target="#editCustomer@(item.Id)"><i class="fas fa-edit"></i></button></td>
+                                                    <td style="width:110px" class="text-center">@(item.Status ? @Html.Raw("<i class='far fa-check-circle' style='color: green'></i>") : @Html.Raw("<i class='far fa-times-circle' style='color: red'></i>"))</td>
+                                                    <td class="text-center"><button  style="font-size:10px" class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#editCustomer@(item.Id)"><i class="fas fa-edit"></i></button></td>
                                                     <td class="text-center"><button  style="font-size:10px" class="btn btn-danger btn-sm"  type="button" data-toggle="modal" data-target="#deleteModal@(item.Id)"><i class="fas fa-trash"></i></button></td>
                                                 </tr>
 
@@ -87,6 +124,22 @@
                                             }
                                         </tbody>
                                     </table>
+                                       <div class="d-flex justify-content-end">
+                                        <ul class="pagination pagination-sm">
+                                              	@for (int i = 1; i <= ViewBag.TotalPage; i++)
+                                                {
+                                                    @if(ViewBag.CurentPage == i){
+                                                        <li class="page-item active"><a  class="page-link" href="?page=@i">@i</a></li>	
+                                                    }
+                                                    else{
+                                                        <li class="page-item"><a class="page-link" href="?page=@i">@i</a></li>
+                                                    }
+                                                }
+                                                @if(ViewBag.TotalPage > ViewBag.CurentPage){
+                                                    <li  class="page-item"><a class="page-link" href="?page=@(ViewBag.CurentPage + 1)"><i class="fas fa-chevron-right"></i></a></li>
+                                                }
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                      </div>
@@ -108,20 +161,16 @@
         <form method="Post" action="/admin/customer">
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tài khoản:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="username">
+                    <label for="recipient-name" class="col-form-label">Tài khoản :</label>
+                    <input type="text" class="form-control" id="recipient-name" name="Username">
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Mật khẩu:</label>
-                    <input type="password" class="form-control" id="recipient-name" name="password">
+                    <label for="recipient-name" class="col-form-label">Mật khẩu :</label>
+                    <input type="password" class="form-control" id="recipient-name" name="Password">
                 </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Họ:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="FirstName">
-                </div>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tên:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="LastName">
+                    <label for="recipient-name" class="col-form-label">Họ tên:</label>
+                    <input type="text" class="form-control" id="recipient-name" name="FullName">
                 </div>
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Điện thoại:</label>
@@ -130,6 +179,10 @@
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Email:</label>
                     <input type="text" class="form-control" id="recipient-name" name="Email">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Ngày sinh:</label>
+                    <input type="date" class="form-control input-date" name="BirthDate">
                 </div>
             </div>
             <div class="modal-footer">
@@ -158,20 +211,16 @@
             <div class="modal-body">
 
                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tài khoản:</label>
+                    <label for="recipient-name" class="col-form-label">Tài khoản :</label>
                     <input type="text" class="form-control" id="recipient-name" name="username" value="@item.Username" disabled >
                 </div>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Mật khẩu:</label>
-                    <input type="password" class="form-control" id="recipient-name" name="password"  value="******">
+                 <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Họ tên:</label>
+                    <input type="text" class="form-control" id="recipient-name" name="FullName" value="@item.FullName">
                 </div>
                 @* <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Họ:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="FirstName" value="@item.FirstName">
-                </div>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Tên:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="LastName" value="@item.LastName" >
+                    <label for="recipient-name" class="col-form-label">Mật khẩu :</label>
+                    <input type="password" class="form-control" id="recipient-name" name="password"  value="******">
                 </div> *@
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Điện thoại:</label>
@@ -183,16 +232,16 @@
                 </div>
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Ngày sinh:</label>
-                    <input type="text" class="form-control" id="datepicker" name="BirthDate" value="@item.BirthDate">
+                    <input type="date" class="form-control" id="datepicker" name="BirthDate" value="@item.BirthDate.ToString("yyyy-MM-dd")">
                 </div>
              <div class="form-check">
-            <input class="form-check-input" type="radio" name="status" id="exampleRadios1" value="option1" checked>
+            <input class="form-check-input" type="radio" name="status" id="exampleRadios1" value="true" checked>
             <label class="form-check-label" for="exampleRadios1">
                 Đang hoạt động
             </label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="radio" name="status" id="exampleRadios2" value="option2" >
+            <input class="form-check-input" type="radio" name="status" id="exampleRadios2" value="false" >
             <label class="form-check-label" for="exampleRadios2">
                 Không hoạt động
             </label>

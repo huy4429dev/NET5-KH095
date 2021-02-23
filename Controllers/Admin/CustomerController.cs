@@ -22,30 +22,51 @@ namespace KH095.Admin.Controllers
         }
 
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1, int pageSize = 25)
         {
 
-            var Customers = db.Users
+            var query = db.Users.AsQueryable();
+            var Customers = query
                               .Where(item => item.UserRoles.Any(r => r.Role.Name.ToLower() != "admin"))
                               .OrderBy(item => item.Id)
+                              .Skip((page - 1) * pageSize)
+                              .Take(pageSize)
                               .ToList();
 
+            ViewBag.TotalPage = query.Count() % pageSize == 0 ? query.Count() / pageSize : query.Count() / pageSize + 1;
+            ViewBag.CurentPage = page;
             return View("/Views/Admin/Customer/Index.cshtml", Customers);
-
         }
 
         [HttpGet("search")]
 
-        public IActionResult Search(string query)
+        public IActionResult Search(string query, DateTime? fillDate, int page = 1, int pageSize = 25)
         {
+            var sql = db.Users
+                        .Where(item => item.UserRoles.Any(r => r.Role.Name.ToLower() != "admin"))
+                        .AsNoTracking();
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                query = "%" + query + "%";
+                sql = sql.Where(item => EF.Functions.ILike(item.Username, query)
+                                        || EF.Functions.ILike(item.Address, query)
+                                        || EF.Functions.ILike(item.FullName, query)
+                                        || EF.Functions.ILike(item.Phone, query)
+                               );
+            }
 
-            query = "%" + query + "%";
+            if (fillDate.HasValue)
+            {
+                sql = sql.Where(item => item.CreatTime == fillDate);
+            }
 
-            var Customers = db.Users
-                                  .Where(item => EF.Functions.ILike(item.Username, query)
-                                                 || EF.Functions.ILike(item.Address, query)
-                                         )
-                               .OrderBy(item => item.Id).ToList();
+            var Customers = sql.OrderByDescending(item => item.Id)
+                     .Skip((page - 1) * pageSize)
+                     .Take(pageSize)
+                     .ToList();
+
+            ViewBag.TotalPage = sql.Count() % pageSize == 0 ? sql.Count() / pageSize : sql.Count() / pageSize + 1;
+            ViewBag.CurentPage = page;
 
             return View("/Views/Admin/Customer/Index.cshtml", Customers);
         }
@@ -67,9 +88,13 @@ namespace KH095.Admin.Controllers
                 }
                 else
                 {
-                    // model.FullName = model.FirstName + " " + model.LastName;
                     model.CreatTime = DateTime.Now;
                     model.Status = true;
+                    model.UserRoles = new List<UserRole> {
+                        new UserRole {
+                            RoleId = 2
+                        }
+                    };
                     db.Users.Add(model);
                     db.SaveChanges();
                     TempData["message"] = "Thêm mới khách hàng thành công";
@@ -94,6 +119,8 @@ namespace KH095.Admin.Controllers
         public IActionResult Update(int id, [FromForm] User model)
         {
             SkipModelValidate("ConfirmPassword");
+            SkipModelValidate("Username");
+            SkipModelValidate("Password");
             if (ModelState.IsValid)
             {
                 var found = db.Users.Find(id);
@@ -103,10 +130,10 @@ namespace KH095.Admin.Controllers
                 {
                     ModelState.AddModelError("Found Customer", "Không tồn tại khách hàng");
                 }
-                
-                found.Username = model.Username;
-                // found.LastName = model.LastName;
+
+                found.FullName = model.FullName;
                 found.Address = model.Address;
+                found.Phone = model.Phone;
                 found.BirthDate = model.BirthDate;
 
                 // add category
@@ -117,7 +144,6 @@ namespace KH095.Admin.Controllers
                 // alert success to view
                 TempData["message"] = "Cập nhật khách hàng thành công";
             }
-
             return RedirectToAction("Index");
 
         }

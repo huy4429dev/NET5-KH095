@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using KH095.Models;
 using KH095.Data;
+using KH095.Extension;
 
 namespace KH095.Controllers
 {
@@ -23,10 +24,28 @@ namespace KH095.Controllers
 
         public IActionResult Index()
         {
+
+            var Categories = HttpContext.Session.Get<List<ProductType>>("categories");
+            
+            if(Categories == null){
+                var productTypes = db.ProductTypes
+                                     .Where(item => item.ProductTypeChildrens.Any())
+                                     .Select(item => new ProductType {
+                                         Id = item.Id,
+                                         Name = item.Name,
+                                         Description = item.Description,
+                                         ProductTypeChildrens = item.ProductTypeChildrens
+                                     })
+                                     .ToList();
+                HttpContext.Session.Set<List<ProductType>>("categories",productTypes);
+                Categories = productTypes;
+            }
+
             ViewBag.ProductHots = db.Products.OrderBy(item => item.CountOrder).Skip(0).Take(8).ToList();
             ViewBag.ProductNews = db.Products.OrderBy(item => item.CreatedTime).Skip(0).Take(8).ToList();
             return View();
         }
+        
 
     }
 }
