@@ -1,0 +1,87 @@
+/*------------------------------Payment Success------------------------------*/
+
+.payment-success {
+  margin: 20px 0 20px 0;
+  background-image: url(images/back-22.png);
+  padding: 20px;
+}
+
+.payment-success .container {
+  background-color: white;
+  padding: 20px;
+  max-width: 1170px;
+}
+
+.payment-success .container .page-title {
+  width: auto;
+  text-align: center;
+  margin: 20px 0px 40px 0px;
+}
+
+.payment-success .page-content {
+  margin: 40px 0px 20px 0px;
+}
+.payment-success .container .page-title .icon-success {
+  background-image: url(images/icon-success.png);
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.payment-success .order-info {
+  background-color: #fff4e2;
+  padding: 20px 10px 10px 10px;
+}
+
+.payment-success .title-sml {
+  margin: 20px;
+}
+
+.payment-success .info-detail {
+  margin-top: 10px;
+}
+
+.payment-success .info-detail h6 {
+  line-height: 24px;
+}
+
+.payment-success .info-detail a {
+  color: #4099da;
+  text-decoration: underline;
+}
+
+.payment-success .info-detail a:hover {
+  text-decoration: none;
+}
+
+.payment-success .payment-success-contact {
+  margin: 20px 0px;
+}
+
+.payment-success-contact h6 {
+  margin-top: 20px;
+}
+
+.payment-success-contact .logo-image {
+  margin-top: 20px;
+}
+
+.payment-success .continue {
+  margin: 20px 0px;
+  text-align: center !important;
+}
+
+.btn-pink {
+  text-align: center;
+  padding: 5px;
+  background-color: #f5447b;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}

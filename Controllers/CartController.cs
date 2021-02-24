@@ -167,5 +167,13 @@ namespace KH095.Controllers
             }
         }
 
+        [Route("/payment-success")]
+        public IActionResult PaymentSuccess()
+        {
+
+            // Xử lý khi đặt hàng
+            return View("/Views/Payment-success/payment-success.cshtml");
+        }
+
     }
 }
