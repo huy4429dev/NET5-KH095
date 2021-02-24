@@ -202,6 +202,8 @@ namespace KH095.Controllers
                 db.SaveChanges();
             }
 
+            ClearCart();
+
             // Xử lý khi đặt hàng
             
             return View("/Views/Payment/checkout.cshtml");

@@ -15658,6 +15658,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\project\\c#\\KH095\\Views\\Payment-success\\payment-success.cshtml",
+      "TargetPath": "Views\\Payment-success\\payment-success.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\project\\c#\\KH095\\Views\\Payment\\checkout.cshtml",
       "TargetPath": "Views\\Payment\\checkout.cshtml",
       "FileKind": "mvc"
