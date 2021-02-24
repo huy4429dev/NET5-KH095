@@ -149,8 +149,11 @@ C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\ref\K
 C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.pdb
 C:\Users\Johnathan Tran\Desktop\New folder (6)\NET5-KH095\obj\Debug\net5.0\KH095.genruntimeconfig.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Payment\checkout.cshtml.g.cs
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095.csprojAssemblyReference.cache
 C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095.AssemblyInfoInputs.cache
@@ -227,5 +230,8 @@ C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095
 C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095.Views.pdb
 C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095.csproj.CopyComplete
 C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\obj\Debug\net5.0\KH095.genruntimeconfig.cache
+<<<<<<< HEAD
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 E:\project\c#\KH095\obj\Debug\net5.0\Razor\Views\Payment-success\payment-success.cshtml.g.cs
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
