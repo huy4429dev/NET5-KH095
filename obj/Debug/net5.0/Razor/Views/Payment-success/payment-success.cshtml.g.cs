@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "E:\project\c#\KH095\Views\Payment-success\payment-success.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "09db8296c5c70d2d52f9da03dca6c7e512b3808b"
+=======
+#pragma checksum "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Payment-success\payment-success.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "09db8296c5c70d2d52f9da03dca6c7e512b3808b"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #pragma checksum "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Payment-success\payment-success.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "09db8296c5c70d2d52f9da03dca6c7e512b3808b"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -22,7 +26,11 @@ namespace AspNetCore
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 1 "E:\project\c#\KH095\Views\_ViewImports.cshtml"
+=======
+#line 1 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #line 1 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -37,7 +45,11 @@ using System;
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 2 "E:\project\c#\KH095\Views\_ViewImports.cshtml"
+=======
+#line 2 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #line 2 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -52,7 +64,11 @@ using KH095;
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 3 "E:\project\c#\KH095\Views\_ViewImports.cshtml"
+=======
+#line 3 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #line 3 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -67,7 +83,11 @@ using KH095.Models;
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 4 "E:\project\c#\KH095\Views\_ViewImports.cshtml"
+=======
+#line 4 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #line 4 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\_ViewImports.cshtml"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -113,7 +133,11 @@ using KH095.Extension;
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 1 "E:\project\c#\KH095\Views\Payment-success\payment-success.cshtml"
+=======
+#line 1 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Payment-success\payment-success.cshtml"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #line 1 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Payment-success\payment-success.cshtml"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -131,7 +155,11 @@ using KH095.Extension;
                 WriteLiteral("\r\n    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09db8296c5c70d2d52f9da03dca6c7e512b3808b4683", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09db8296c5c70d2d52f9da03dca6c7e512b3808b4911", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09db8296c5c70d2d52f9da03dca6c7e512b3808b4911", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -154,7 +182,11 @@ using KH095.Extension;
                 WriteLiteral("\r\n     ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09db8296c5c70d2d52f9da03dca6c7e512b3808b5862", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09db8296c5c70d2d52f9da03dca6c7e512b3808b6090", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "09db8296c5c70d2d52f9da03dca6c7e512b3808b6090", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8

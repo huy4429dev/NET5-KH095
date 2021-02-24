@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "E:\project\c#\KH095\Views\Product\productCategory.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea2"
+=======
+#pragma checksum "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "719d1daed3ad0a471e215653ecf8e307806cb1fb"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #pragma checksum "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "719d1daed3ad0a471e215653ecf8e307806cb1fb"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -178,6 +182,9 @@ using KH095.Extension;
             WriteLiteral("i class=\"select-box\">\r\n                  <select name=\"weight\" id=\"orderby\">\r\n                    ");
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb9907", async() => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
+=======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -198,7 +205,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea211252", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb11086", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb11086", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -222,7 +233,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea212434", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb12268", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb12268", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -246,7 +261,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea213617", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb13451", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb13451", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -270,7 +289,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea214800", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb14634", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb14634", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -294,7 +317,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea215983", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb15817", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb15817", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -318,7 +345,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea217166", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb17000", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb17000", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -342,7 +373,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea218349", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb18183", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb18183", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -366,7 +401,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea219532", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb19366", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb19366", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -390,7 +429,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea220715", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb20549", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb20549", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -414,7 +457,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea221898", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb21732", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb21732", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -438,7 +485,11 @@ using KH095.Extension;
             WriteLiteral("\r\n                    ");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f72ba4b3f9dd0d287bfd2c6e76343e2921424ea223080", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb22914", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "719d1daed3ad0a471e215653ecf8e307806cb1fb22914", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -506,9 +557,12 @@ using KH095.Extension;
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 115 "E:\project\c#\KH095\Views\Product\productCategory.cshtml"
 WriteAttributeValue("", 4812, item.Id, 4812, 8, false);
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 #line 115 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml"
@@ -524,9 +578,12 @@ WriteAttributeValue("", 4796, item.Id, 4796, 8, false);
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 116 "E:\project\c#\KH095\Views\Product\productCategory.cshtml"
 WriteAttributeValue("", 4855, item.Image, 4855, 11, false);
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 #line 116 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml"
@@ -577,9 +634,12 @@ WriteAttributeValue("", 4839, item.Image, 4839, 11, false);
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 136 "E:\project\c#\KH095\Views\Product\productCategory.cshtml"
 WriteAttributeValue("", 5556, ViewBag.Query, 5556, 14, false);
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 #line 136 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml"
@@ -593,9 +653,12 @@ WriteAttributeValue("", 5540, ViewBag.Query, 5540, 14, false);
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 136 "E:\project\c#\KH095\Views\Product\productCategory.cshtml"
 WriteAttributeValue("", 5576, i, 5576, 2, false);
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 #line 136 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml"
@@ -629,9 +692,12 @@ WriteAttributeValue("", 5560, i, 5560, 2, false);
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 139 "E:\project\c#\KH095\Views\Product\productCategory.cshtml"
 WriteAttributeValue("", 5710, ViewBag.Query, 5710, 14, false);
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 #line 139 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml"
@@ -645,9 +711,12 @@ WriteAttributeValue("", 5694, ViewBag.Query, 5694, 14, false);
 #nullable restore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 139 "E:\project\c#\KH095\Views\Product\productCategory.cshtml"
 WriteAttributeValue("", 5730, i, 5730, 2, false);
 =======
+=======
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 #line 139 "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Product\productCategory.cshtml"
