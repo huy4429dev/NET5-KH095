@@ -56,11 +56,8 @@ namespace KH095.Admin.Controllers
                                      User = item.User,
                                      Id = item.Id,
                                      Amount = item.Amount,
-                                     TimeEnd = item.TimeEnd,
                                      Note = item.Note,
-                                     Status = item.Status,
-                                     FromDate = item.FromDate,
-                                     ToDate = item.ToDate
+                                     Status = item.Status
                                  })
                                  .FirstOrDefault()
                 ;
@@ -72,32 +69,10 @@ namespace KH095.Admin.Controllers
         public IActionResult Update(int id, [FromForm] Order model)
         {
 
-            string RangeTime = Request.Form["datetimes"];
-            var FromDate = DateTime.ParseExact(RangeTime.Substring(0, RangeTime.IndexOf("-")).Trim(), "hh:mm tt dd/MM/yyyy", CultureInfo.InvariantCulture);
-            var ToDate = DateTime.ParseExact(RangeTime.Substring(RangeTime.IndexOf("-") + 1).Trim(), "hh:mm tt dd/MM/yyyy", CultureInfo.InvariantCulture);
-            // check time valid 
-
-            var TimeValid = (ToDate - FromDate).TotalDays;
-
-            if (TimeValid > 10)
-            {
-                TempData["Error"] = "Khách hàng này không được mua sản phẩm quá 10 ngày";
-            }
-            else
-            {
-                var user = HttpContext.Session.Get<User>("user");
+            var user = HttpContext.Session.Get<User>("user");
                 var Order = db.Orders.Include(o => o.OrderDetails).FirstOrDefault(o => o.Id == id);
                 var CountProductValid = Order.OrderDetails.Count();
-
-                if (CountProductValid > 3)
-                {
-                    TempData["Error"] = "Khách hàng này không được mua số lượng sản phẩm quá 3 quyển";
-                    
-                }
-
                 Order.Status = model.Status;
-                Order.FromDate = FromDate;
-                Order.ToDate = ToDate;
                 Order.UserverifyId = user?.Id ?? db.Users.Where(item => item.Username == "Admin").Select(item => item.Id).First();
                 if(model.Status == OrderStatus.Success || model.Status == OrderStatus.Dispose){
                     foreach (var item in Order.OrderDetails)
@@ -109,9 +84,7 @@ namespace KH095.Admin.Controllers
                 }
 
                 db.SaveChanges();
-
-                TempData["Success"] = "Cập nhật trạng thái phiếu mua thành công";
-            }
+                TempData["Success"] = "Cập nhật trạng thái đơn hàng thành công";
 
 
             return Redirect(Request.Headers["Referer"].ToString());

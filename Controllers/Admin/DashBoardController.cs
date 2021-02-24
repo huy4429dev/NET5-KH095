@@ -69,14 +69,12 @@ namespace KH095.Controllers
 
             ViewBag.TotalProduct_Phai_Tra = db.Orders
                                        .Where(o => o.CreatedTime > Date
-                                                 && o.TimeEnd < ADD_NOW_DATE_GAN_TRA
                                                  && o.Status == OrderStatus.NoProcess 
                                                  )
                                        .Count();
 
             ViewBag.TotalProduct_Qua_Han = db.Orders
                                        .Where(o => o.CreatedTime > Date
-                                                 && o.TimeEnd < Now
                                                  && o.Status == OrderStatus.Dispose 
                                                  )
                                        .Count();
@@ -115,7 +113,6 @@ namespace KH095.Controllers
 
             var TotalProduct_Phai_Tra_PerMonth = db.Orders
                                     .Where(o => o.CreatedTime > FirstDayOfWeek
-                                                && o.TimeEnd < ADD_NOW_DATE_GAN_TRA
                                                 && o.Status == OrderStatus.Borrowed 
                                                 )
                                      .Select(o => new
@@ -135,7 +132,6 @@ namespace KH095.Controllers
 
             var TotalProduct_Qua_Han_PerMoth = db.Orders
                                        .Where(o => o.CreatedTime > FirstDayOfWeek
-                                                 && o.TimeEnd < Now
                                                  && o.Status == OrderStatus.Borrowed 
                                                  )
                                         .Select(o => new

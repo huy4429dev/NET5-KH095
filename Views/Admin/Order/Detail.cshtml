@@ -111,10 +111,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
-
-    var fromDate = @Html.Raw(Json.Serialize(Model.FromDate));
-    var toDate = @Html.Raw(Json.Serialize(Model.ToDate));
-    
     $(function() {
     $('input[name="datetimes"]').daterangepicker({
         timePicker: true,

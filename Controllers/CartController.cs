@@ -140,17 +140,71 @@ namespace KH095.Controllers
         }
 
         [HttpPost("checkout")]
-        public IActionResult CheckOut([FromForm] User model)
+        public IActionResult CheckOut([FromForm] Order model)
         {
-            return Ok("DANG XU LY");
+            SkipModelValidate("Username");
+            SkipModelValidate("Password");
+            SkipModelValidate("Email");
+            
             if(ModelState.IsValid){
-                var data = HttpContext.Request.Form;
-                return Ok(model);
+                var data = HttpContext.Request.Form; 
+                var Username = model.Email.Substring(0,model.Email.IndexOf("@"));
+                var found = db.Users.FirstOrDefault(item => item.Username == Username || item.Email == model.Email);
+
+                if (found != null)
+                {
+                    ModelState.AddModelError("Found Customer", "Khách hàng đã tồn tại");
+                }
+
+                else
+                {
+                    found = new User();
+                    found.Username = Username;
+                    found.FullName = model.FullName;
+                    found.Phone = model.Phone;
+                    found.Password = "123456";
+                    found.Address = model.Address;
+                    found.Email = model.Email;
+                    found.CreatTime = DateTime.Now;
+                    found.Status = true;
+                    found.UserRoles = new List<UserRole> {
+                        new UserRole {
+                            RoleId = 2
+                        }
+                    };
+                    db.Users.Add(found);
+                    db.SaveChanges();
+                }
+
+                // add customer 
+
+                // add order
+                var now = DateTime.Now;
+                var cart = GetCartItems();
+                var order = new Order {
+                    Amount = cart.Sum(item => item.quantity * item.product.Price),
+                    Email = model.Email,
+                    FullName = model.FullName,
+                    Address = model.Address,
+                    Phone = model.Phone,
+                    Note = model.Note,
+                    UserId = found.Id,
+                    Status = OrderStatus.NoProcess,
+                    OrderDetails = cart.Select(c => new OrderDetail{
+                        ProductId = c.product.Id,
+                        Quantity = c.quantity,
+                        CreatedTime = now,
+                        UpdatedTime = now
+                    }).ToList()
+                };
+
+                db.Orders.Add(order);
+                db.SaveChanges();
             }
 
             // Xử lý khi đặt hàng
             
-            return View("/Views/Checkout/index.cshtml");
+            return View("/Views/Payment/checkout.cshtml");
         }
 
          private void SkipModelValidate(string keyword)

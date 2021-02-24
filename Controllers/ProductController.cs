@@ -68,7 +68,7 @@ namespace KH095.Controllers
             var totalProduct = query.Count();
             ViewBag.TotalPage = totalProduct % pageSize == 0 ? totalProduct / pageSize : totalProduct / pageSize + 1;
             ViewBag.Query = query;
-
+            ViewBag.CategoryName = db.ProductTypes.Where(item => item.Id == categoryId).Select(item => item.Name).FirstOrDefault();
             return View("/Views/Product/productCategory.cshtml", Products);
         }
         [HttpGet("{id}")]
