@@ -1,7 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "E:\project\c#\KH095\Views\Admin\Order\Detail.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "f9dd6e05c89c5950fba5cb80e61ee8b3d7bcd9c7"
+=======
+#pragma checksum "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Admin\Order\Detail.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "07b68098600596c85f5496b06541658c5e7fbc73"
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
 #pragma checksum "C:\Users\Johnathan Tran\Desktop\New folder (7)\NET5-KH095\Views\Admin\Order\Detail.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "07b68098600596c85f5496b06541658c5e7fbc73"
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -113,7 +117,11 @@ using KH095.Extension;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9dd6e05c89c5950fba5cb80e61ee8b3d7bcd9c75782", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b68098600596c85f5496b06541658c5e7fbc736048", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b68098600596c85f5496b06541658c5e7fbc736048", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -147,7 +155,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9dd6e05c89c5950fba5cb80e61ee8b3d7bcd9c77467", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b68098600596c85f5496b06541658c5e7fbc737771", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b68098600596c85f5496b06541658c5e7fbc737771", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
@@ -258,7 +270,11 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9dd6e05c89c5950fba5cb80e61ee8b3d7bcd9c712298", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b68098600596c85f5496b06541658c5e7fbc7313020", async() => {
+>>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b68098600596c85f5496b06541658c5e7fbc7313020", async() => {
 >>>>>>> 09828816a4f7df08fc590ec86e12227467b8cad8
