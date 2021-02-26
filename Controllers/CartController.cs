@@ -162,7 +162,7 @@ namespace KH095.Controllers
                     found.Username = Username;
                     found.FullName = model.FullName;
                     found.Phone = model.Phone;
-                    found.Password = "123456";
+                    found.Password = model.Email;
                     found.Address = model.Address;
                     found.Email = model.Email;
                     found.CreatTime = DateTime.Now;

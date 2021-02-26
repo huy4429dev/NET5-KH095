@@ -133,13 +133,15 @@
           </li> *@
         </ul>
         <div class="menu__icon">
-          <i
-            class="fa fa-shopping-cart"
-            style="font-size: 30px; color: #ffffff;margin-top:5px"
-          ></i>
-          <span class="cart-total">
-            @(cart?.Count() != null ? cart.Count : 0 ) item(s) - 0 đ
-          </span>
+          <a href="/cart">
+            <i
+              class="fa fa-shopping-cart"
+              style="font-size: 30px; color: #ffffff;margin-top:5px"
+            ></i>
+          </a>
+            <span class="cart-total">
+              @(cart?.Count() != null ? cart.Count : 0 ) item(s) - 0 đ
+            </span>
           <a href="#" class="fixed-center">
             <i class="fas fa-sort-down"></i>
         </a>
@@ -165,11 +167,11 @@
           </div>
           <div class="welcome">
             Xin chào! Bạn có thể
-            <a rel="nofollow" style="color:black" href="https://www.bexinhshop.vn/login"
+            <a rel="nofollow" style="color:black" href="/login"
               >Đăng Nhập</a
             >
             hoặc
-            <a rel="nofollow" style="color:black" href="https://www.bexinhshop.vn/register"
+            <a rel="nofollow" style="color:black" href="/register"
               >tạo Tài Khoản</a
             >
           </div>
